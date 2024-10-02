@@ -1,7 +1,9 @@
+import Logo from "../../resources/cangrejoHappy.png"
+
 export const Home = () => {
   return (
     <>
-      Home
+      <img src={Logo} alt="imagen" />
     </>
   )
 }
