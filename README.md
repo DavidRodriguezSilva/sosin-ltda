@@ -78,11 +78,12 @@ Una breve descripción del cambio realizado. Debe ser concisa y en tiempo presen
 (Opcional) Número del ticket o referencia a la tarea relacionada.
 
 
-#6B3F24 – Marrón oscuro cálido.
-#D4A017 – Dorado vibrante.
-#000000 – Negro.
-#FFFFFF – Blanco.
-#F2F2F2 – Gris claro suave.
+#722F37 – Vinotinto oscuro (para el escudo).
+#D8B668 – Dorado suave (para la corona de laurel).
+#000000 – Negro (para el texto y las manos).
+#FFFFFF – Blanco (para el fondo y algunos detalles del candado).
+#EAEAEA – Gris claro (para el fondo, que es muy sutilmente distinto del blanco puro).
+
 Para complementar:
 
 #A65E2E – Naranja oscuro o terracota (complementa el marrón y el dorado).
