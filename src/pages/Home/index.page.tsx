@@ -1,9 +1,9 @@
-import Logo from "../../resources/cangrejoHappy.png"
+import Footer from "../../shared/components/Footer/Footer"
 
 export const Home = () => {
   return (
     <>
-      <img src={Logo} alt="imagen" />
+      <Footer/>
     </>
   )
 }
