@@ -76,3 +76,17 @@ Una breve descripción del cambio realizado. Debe ser concisa y en tiempo presen
 ### #ticket:
 
 (Opcional) Número del ticket o referencia a la tarea relacionada.
+
+
+#6B3F24 – Marrón oscuro cálido.
+#D4A017 – Dorado vibrante.
+#000000 – Negro.
+#FFFFFF – Blanco.
+#F2F2F2 – Gris claro suave.
+Para complementar:
+
+#A65E2E – Naranja oscuro o terracota (complementa el marrón y el dorado).
+#BEBEBE – Gris medio (transición suave entre el negro y el gris claro).
+#B39200 – Dorado más oscuro para crear variaciones dentro de los tonos dorados.
+#8B4513 – Marrón chocolate más fuerte que el #6B3F24, para mayor profundidad.
+#3B3B3B – Gris oscuro, menos intenso que el negro, pero con buena definición.
