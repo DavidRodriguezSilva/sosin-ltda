@@ -1,7 +1,7 @@
 @import url("../shared/components/header/styles.css");
 @import url("../shared/components/Footer/styles.css");
 @import url('../../node_modules/bootstrap/dist/css/bootstrap.css');
-
+@import url('../shared/components/Feature/style.css');
 html,
 body {
   height: 100%;
