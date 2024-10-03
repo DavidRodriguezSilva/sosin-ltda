@@ -1,7 +1,7 @@
 {
   "name": "sosin-ltda",
   "version": "0.1.0",
-  "homepage": "https://davidrodriguezsilva.github.io/sosin-ltda/",
+  "homepage": "https://davidrodriguezsilva.github.io/",
   "private": true,
   "dependencies": {
     "@types/jest": "^27.5.2",
