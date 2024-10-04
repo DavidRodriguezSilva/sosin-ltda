@@ -2,6 +2,10 @@
 @import url("../shared/components/Footer/styles.css");
 @import url('../../node_modules/bootstrap/dist/css/bootstrap.css');
 @import url('../shared/components/Feature/style.css');
+@import url("../shared/components/Testimonials/style.css");
+@import url("../shared/components/Team Section/style.css");
+@import url("../shared/components/Contact/style.css");
+
 html,
 body {
   height: 100%;

@@ -6,8 +6,6 @@
   "dependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.112",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
     "bootstrap": "^3.4.1",
     "gh-pages": "^6.1.1",
     "react": "^18.3.1",
@@ -40,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0"
   }
 }

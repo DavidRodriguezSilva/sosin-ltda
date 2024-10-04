@@ -5,6 +5,9 @@ import Feature from "../../shared/components/Feature/Feature"
 import About from "../../shared/components/About/About"
 import ServiceSection from "../../shared/components/Service Section/ServiceSection"
 import Gallery from "../../shared/components/Gallery/Gallery"
+import Testimonials from "../../shared/components/Testimonials/Testimonials"
+import TeamSection from "../../shared/components/Team Section/TeamSection"
+import Contact from "../../shared/components/Contact/Contact"
 
 export const Home = () => {
   return (
@@ -15,6 +18,9 @@ export const Home = () => {
       <About/>
       <ServiceSection/>
       <Gallery/>
+      <Testimonials/>
+      <TeamSection/>
+      <Contact/>
       <Footer/>
     </>
   )
