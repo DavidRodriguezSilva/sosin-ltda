@@ -9,7 +9,7 @@ const Testimonials = () => {
           <div className="col-md-4">
             <div className="testimonial">
               <div className="testimonial-image">
-                <img src="img/testimonials/01.jpg" alt="" />
+                <img src="./../../../resources/img/testimonials/01.jpg" alt="" />
               </div>
               <div className="testimonial-content">
                 <p>
@@ -24,7 +24,7 @@ const Testimonials = () => {
           <div className="col-md-4">
             <div className="testimonial">
               <div className="testimonial-image">
-                <img src="img/testimonials/02.jpg" alt="" />
+                <img src="./../../../resources/img/testimonials/02.jpg" alt="" />
               </div>
               <div className="testimonial-content">
                 <p>
@@ -39,7 +39,7 @@ const Testimonials = () => {
           <div className="col-md-4">
             <div className="testimonial">
               <div className="testimonial-image">
-                <img src="img/testimonials/03.jpg" alt="" />
+                <img src="./../../../resources/img/testimonials/03.jpg" alt="" />
               </div>
               <div className="testimonial-content">
                 <p>
@@ -55,7 +55,7 @@ const Testimonials = () => {
           <div className="col-md-4">
             <div className="testimonial">
               <div className="testimonial-image">
-                <img src="img/testimonials/04.jpg" alt="" />
+                <img src="./../../../resources/img/testimonials/04.jpg" alt="" />
               </div>
               <div className="testimonial-content">
                 <p>
@@ -70,7 +70,7 @@ const Testimonials = () => {
           <div className="col-md-4">
             <div className="testimonial">
               <div className="testimonial-image">
-                <img src="img/testimonials/05.jpg" alt="" />
+                <img src="./../../../resources/img/testimonials/05.jpg" alt="" />
               </div>
               <div className="testimonial-content">
                 <p>
@@ -85,7 +85,7 @@ const Testimonials = () => {
           <div className="col-md-4">
             <div className="testimonial">
               <div className="testimonial-image">
-                <img src="img/testimonials/06.jpg" alt="" />
+                <img src="./../../../resources/img/testimonials/06.jpg" alt="" />
               </div>
               <div className="testimonial-content">
                 <p>

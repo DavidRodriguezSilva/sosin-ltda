@@ -80,12 +80,15 @@
   }
   
   #header.header-top-fixed {
-	position: fixed;
-	height: 100px;
-	-webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-  }
+    position: fixed;
+    height: 100px;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    z-index: 700;
+    background-color: #722F37; /* nuevo color de fondo */
+}
+
   
   #header.header-top-fixed .full-screen-block {
 	height: 100px !important;
@@ -141,6 +144,8 @@
   }
   #header .header-logo img{
 	transform: translateZ(2px);
+	height: auto;
+    width: auto; 
   }
   #header .header-logo span{
   
@@ -252,7 +257,7 @@
   }
   
   #header .navbar-header-phone p {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(114, 47, 55, 1);
 	text-align: right;
 	font-size: 15px;
 	line-height: 22px;
@@ -261,7 +266,7 @@
   }
   
   #header .navbar-header-phone p i {
-	color: #b46e3c;
+	color: #722F37;
 	margin-right: 10px;
   }
   
@@ -334,7 +339,7 @@
   
   #header .navbar-default .navbar-nav li .bg-icon i {
 	font-size: 60px;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 1);
   }
   
   #header .navbar-default .navbar-nav li .rotated-title {
@@ -417,7 +422,7 @@
   }
   
   #header .navbar-default .navbar-nav li:hover .rotated-title {
-	color: #ffffff;
+	color: #EAEAEA;
   }
   
   #header .navbar-default .navbar-nav li.no-bg-shadow {
@@ -598,6 +603,7 @@
   #header .navbar-default .navbar-nav>li>.link-item {
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 1);
+	/*colo de las letras de los menus del header */
 	font-family: 'Opensans', sans-serif;
 	font-size: 13px;
 	padding: 40px 20px;

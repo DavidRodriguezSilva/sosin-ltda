@@ -84,6 +84,21 @@ Una breve descripción del cambio realizado. Debe ser concisa y en tiempo presen
 #FFFFFF – Blanco (para el fondo y algunos detalles del candado).
 #EAEAEA – Gris claro (para el fondo, que es muy sutilmente distinto del blanco puro).
 
+Vinotinto oscuro (#722F37):
+RGBA: rgba(114, 47, 55, 1)
+
+Dorado suave (#D8B668):
+RGBA: rgba(216, 182, 104, 1)
+
+Negro (#000000):
+RGBA: rgba(0, 0, 0, 1)
+
+Blanco (#FFFFFF):
+RGBA: rgba(255, 255, 255, 1)
+
+Gris claro (#EAEAEA):
+RGBA: rgba(234, 234, 234, 1)
+
 Para complementar:
 
 #A65E2E – Naranja oscuro o terracota (complementa el marrón y el dorado).

@@ -12,7 +12,7 @@ const TeamSection = () => {
         <div id="row">
         <div className="col-md-3 col-sm-6 team">
             <div className="thumbnail">
-            <img src="img/team/01.jpg" alt="..." className="team-img" />
+            <img src="./../../../resources/img/team/01.jpg" alt="..." className="team-img" />
             <div className="caption">
                 <h4>John Doe</h4>
                 <p>Director</p>
@@ -21,7 +21,7 @@ const TeamSection = () => {
         </div>
         <div className="col-md-3 col-sm-6 team">
             <div className="thumbnail">
-            <img src="img/team/02.jpg" alt="..." className="team-img" />
+            <img src="./../../../resources/img/team/02.jpg" alt="..." className="team-img" />
             <div className="caption">
                 <h4>Mike Doe</h4>
                 <p>Senior Designer</p>
@@ -30,7 +30,7 @@ const TeamSection = () => {
         </div>
         <div className="col-md-3 col-sm-6 team">
             <div className="thumbnail">
-            <img src="img/team/03.jpg" alt="..." className="team-img" />
+            <img src="./../../../resources/img/team/03.jpg" alt="..." className="team-img" />
             <div className="caption">
                 <h4>Jane Doe</h4>
                 <p>Senior Designer</p>
@@ -39,7 +39,7 @@ const TeamSection = () => {
         </div>
         <div className="col-md-3 col-sm-6 team">
             <div className="thumbnail">
-            <img src="img/team/04.jpg" alt="..." className="team-img" />
+            <img src="./../../../resources/img/team/04.jpg" alt="..." className="team-img" />
             <div className="caption">
                 <h4>Karen Doe</h4>
                 <p>Project Manager</p>

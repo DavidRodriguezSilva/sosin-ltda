@@ -8,9 +8,7 @@ const Header = () => {
               <div className="navbar-header">
                 <a className="header-logo">
                   <span></span>
-                  <img
-                    src=""
-                    alt="logo"
+                  <img src={require("./../../../resources/SOSIN 1.0.png")} alt="logo"
                   />
                 </a>
                 <button
