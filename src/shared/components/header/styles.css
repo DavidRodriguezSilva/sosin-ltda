@@ -434,29 +434,29 @@
   }
   
   #header .navbar-default .navbar-nav .home {
-	background-image: url("src/resources/bg6.jpg");
+	background-image: url("./../../../resources/bg6.jpg");
 	background-position: center center;
 	background-size: cover;
   }
   
   #header .navbar-default .navbar-nav .about {
-	background-image: url("src/resources/bg2.jpg");
+	background-image: url("./../../../resources/bg2.jpg");
 	background-position: center center;
 	background-size: cover;
   }
   #header .navbar-default .navbar-nav .service {
-	background-image: url("src/resources/bg3.jpg");
+	background-image: url("./../../../resources/bg3.jpg");
 	background-position: center center;
 	background-size: cover;
   }
   
   #header .navbar-default .navbar-nav .work {
-	background-image: url("src/resources/bg4.jpg");
+	background-image: url("./../../../resources/bg4.jpg");
 	background-position: center center;
 	background-size: cover;
   }
   #header .navbar-default .navbar-nav .contact {
-	background-image: url("src/resources/bg5.jpg");
+	background-image: url("./../../../resources/bg5.jpg");
 	background-position: center center;
 	background-size: cover;
   }
