@@ -7,7 +7,7 @@ const Presentation = () => {
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
                 <h1>
-                  We Are Interact<span></span>
+                  SOSIN LTDA<span></span>
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
