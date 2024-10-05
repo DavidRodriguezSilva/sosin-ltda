@@ -72,8 +72,7 @@ const Contact = () => {
           </div>
           <div className="contact-item">
             <p>
-              <span><i className="fa fa-envelope-o"></i> Email</span>
-              info@company.com
+              <span><i className="fa fa-envelope-o"></i>Email</span>info@company.com
             </p>
           </div>
         </div>
@@ -81,18 +80,18 @@ const Contact = () => {
           <div className="row">
             <div className="social">
               <ul>
-                <li>
-                  <a href="#"><i className="fa fa-facebook"></i></a>
+                {/* <li>
+                  <a href=""><i className="fa fa-facebook"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i className="fa fa-twitter"></i></a>
+                  <a href=""><i className="fa fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i className="fa fa-google-plus"></i></a>
+                  <a href=""><i className="fa fa-google-plus"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i className="fa fa-youtube"></i></a>
-                </li>
+                  <a href=""><i className="fa fa-youtube"></i></a>
+                </li> */}
               </ul>
             </div>
           </div>

@@ -1,10 +1,12 @@
+import aboutlogo from "../../../resources/about.jpg"
+
 const About = () => {
-    return (
-        <div id="about">
+  return (
+    <div id="about" style={{ padding: "10rem" }}>
       <div className="container">
         <div className="row">
-          <div className="col-xs-12 col-md-6">
-            <img src="src/resources/about.jpg" className="img-responsive" alt="" />
+          <div className="col-xs-12 col-md-6" style={{height:'400px'}}>
+            <img src={aboutlogo} className="img-responsive" alt="" />
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
@@ -41,7 +43,7 @@ const About = () => {
         </div>
       </div>
     </div>
-    )
+  )
 }
 
 export default About

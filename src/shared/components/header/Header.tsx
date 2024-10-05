@@ -6,9 +6,16 @@ const Header = () => {
           <div id="container-fixed">
             <nav className="navbar navbar-default navbar-expand-md">
               <div className="navbar-header">
-                <a className="header-logo">
-                  <span></span>
-                  <img src={require("./../../../resources/SOSIN 1.0.png")} alt="logo"
+                <a className="header-logo" href="/">
+                  <img
+                    src={require("./../../../resources/logo.png")}
+                    alt="logo"
+                    style={{
+                      width: "13vw",
+                      height: "6vh",
+                      objectFit: "contain",
+                      objectPosition: "center",
+                    }}
                   />
                 </a>
                 <button
@@ -30,31 +37,25 @@ const Header = () => {
                 className="collapse navbar-collapse"
                 id="bs-example-navbar-collapse-1"
               >
-                <ul className="nav navbar-nav navbar-right menu-item-5" id="navbar-full">
-                  <li className="current home">
-                    <span className="bg-icon">1</span>
-                    <span className="rotated-title effect">Home</span>
-                    <a className="link-item">Home</a>
-                  </li>
+                <ul
+                  className="nav navbar-nav navbar-right menu-item-5"
+                  id="navbar-full"
+                >
                   <li className="about">
-                    <span className="bg-icon">2</span>
-                    <span className="rotated-title effect">About</span>
-                    <a className="link-item">About</a>
+                    <span className="rotated-title effect">Sobre Nosotros</span>
+                    <a className="link-item" href="#about">Sobre Nosotros</a>
                   </li>
                   <li className="service">
-                    <span className="bg-icon">3</span>
-                    <span className="rotated-title effect">Services</span>
-                    <a className="link-item">Service</a>
+                    <span className="rotated-title effect">Servicios</span>
+                    <a className="link-item" href="#services">Servicios</a>
                   </li>
                   <li className="work">
-                    <span className="bg-icon">4</span>
-                    <span className="rotated-title effect">Works</span>
-                    <a className="link-item">Works</a>
+                    <span className="rotated-title effect">Nuestro Trabajo</span>
+                    <a className="link-item" href="#us">Nuestro Trabajo</a>
                   </li>
                   <li className="contact">
-                    <span className="bg-icon">5</span>
-                    <span className="rotated-title effect">Contact</span>
-                    <a className="link-item">Contact</a>
+                    <span className="rotated-title effect">Cotización</span>
+                    <a className="link-item" href="#contact">Cotización</a>
                   </li>
                 </ul>
               </div>
@@ -63,7 +64,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

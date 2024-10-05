@@ -4,12 +4,10 @@ const Presentation = () => {
       <div className="intro">
         <div className="overlay">
           <div className="container">
-            <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1>
-                  SOSIN LTDA<span></span>
-                </h1>
-                <p>
+            <div className="row" style={{ height: "100vh" }}>
+              <div className="intro-text presentation">
+                <h1>SOSIN</h1>
+                <p style={{ padding: 0 }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   sed dapibus leo nec ornare diam sed commodo nibh ante
                   facilisis bibendum.
