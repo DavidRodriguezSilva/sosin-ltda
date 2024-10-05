@@ -1,4 +1,4 @@
-import aboutlogo from "../../../resources/about.jpg"
+import AboutLogo from "../../../resources/about.jpg"
 
 const About = () => {
   return (
@@ -6,7 +6,7 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-md-6" style={{height:'400px'}}>
-            <img src={aboutlogo} className="img-responsive" alt="" />
+            <img src={AboutLogo} className="img-responsive" alt="" />
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
