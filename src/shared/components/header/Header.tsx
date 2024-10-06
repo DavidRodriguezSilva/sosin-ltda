@@ -51,7 +51,7 @@ const Header = () => {
                   </li>
                   <li className="work">
                     <span className="rotated-title effect">Nuestro Trabajo</span>
-                    <a className="link-item" href="#us">Nuestro Trabajo</a>
+                    <a className="link-item" href="#testimonials">Nuestro Trabajo</a>
                   </li>
                   <li className="contact">
                     <span className="rotated-title effect">Cotización</span>

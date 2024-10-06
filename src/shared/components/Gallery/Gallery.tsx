@@ -1,6 +1,26 @@
+import Gallery1 from "../../../resources/img/portfolio/01-large.jpg"
+import Gallery10 from "../../../resources/img/portfolio/01-small.jpg"
+import Gallery2 from "./../../../resources/img/portfolio/02-large.jpg"
+import Gallery20 from "./../../../resources/img/portfolio/02-small.jpg"
+import Gallery3 from "./../../../resources/img/portfolio/03-large.jpg"
+import Gallery30 from "./../../../resources/img/portfolio/03-small.jpg"
+import Gallery4 from "./../../../resources/img/portfolio/04-large.jpg"
+import Gallery40 from "./../../../resources/img/portfolio/04-small.jpg"
+import Gallery5 from "./../../../resources/img/portfolio/05-large.jpg"
+import Gallery50 from "./../../../resources/img/portfolio/05-small.jpg"
+import Gallery6 from "./../../../resources/img/portfolio/06-large.jpg"
+import Gallery60 from "./../../../resources/img/portfolio/06-small.jpg"
+import Gallery7 from "./../../../resources/img/portfolio/07-large.jpg"
+import Gallery70 from "./../../../resources/img/portfolio/07-small.jpg"
+import Gallery8 from "./../../../resources/img/portfolio/08-large.jpg"
+import Gallery80 from "./../../../resources/img/portfolio/08-small.jpg"
+import Gallery9 from "./../../../resources/img/portfolio/09-large.jpg"
+import Gallery90 from "./../../../resources/img/portfolio/09-small.jpg"
+
+
 const Gallery = () => {
     return (
-        <div id="portfolio" className="text-center">
+      <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
@@ -15,7 +35,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/01-large.jpg"
+                    href={Gallery1}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -23,7 +43,7 @@ const Gallery = () => {
                       <h4>Lorem Ipsum</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/01-small.jpg"
+                      src={Gallery10}
                       className="img-responsive"
                       alt="Project Title"
                     />
@@ -35,7 +55,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/02-large.jpg"
+                    href={Gallery2}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -43,7 +63,7 @@ const Gallery = () => {
                       <h4>Adipiscing Elit</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/02-small.jpg"
+                      src={Gallery20}
                       className="img-responsive"
                       alt="Project Title"
                     />
@@ -55,7 +75,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/03-large.jpg"
+                    href={Gallery3}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -63,7 +83,7 @@ const Gallery = () => {
                       <h4>Lorem Ipsum</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/03-small.jpg"
+                      src={Gallery30}
                       className="img-responsive"
                       alt="Project Title"
                     />
@@ -75,7 +95,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/04-large.jpg"
+                    href={Gallery4}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -83,7 +103,7 @@ const Gallery = () => {
                       <h4>Lorem Ipsum</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/04-small.jpg"
+                      src={Gallery40}
                       className="img-responsive"
                       alt="Project Title"
                     />
@@ -95,7 +115,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/05-large.jpg"
+                    href={Gallery5}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -103,7 +123,7 @@ const Gallery = () => {
                       <h4>Adipiscing Elit</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/05-small.jpg"
+                      src={Gallery50}
                       className="img-responsive"
                       alt="Project Title"
                     />
@@ -115,7 +135,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/06-large.jpg"
+                    href={Gallery6}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -123,7 +143,7 @@ const Gallery = () => {
                       <h4>Dolor Sit</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/06-small.jpg"
+                      src={Gallery60}
                       className="img-responsive"
                       alt="Project Title"
                     />
@@ -135,7 +155,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/07-large.jpg"
+                    href={Gallery7}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -143,7 +163,7 @@ const Gallery = () => {
                       <h4>Dolor Sit</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/07-small.jpg"
+                      src={Gallery70}
                       className="img-responsive"
                       alt="Project Title"
                     />
@@ -155,7 +175,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/08-large.jpg"
+                    href={Gallery8}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -163,7 +183,7 @@ const Gallery = () => {
                       <h4>Lorem Ipsum</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/08-small.jpg"
+                      src={Gallery80}
                       className="img-responsive"
                       alt="Project Title"
                     />
@@ -175,7 +195,7 @@ const Gallery = () => {
               <div className="portfolio-item">
                 <div className="hover-bg">
                   <a
-                    href="./../../../resources/img/portfolio/09-large.jpg"
+                    href={Gallery9}
                     title="Project Title"
                     data-lightbox-gallery="gallery1"
                   >
@@ -183,7 +203,7 @@ const Gallery = () => {
                       <h4>Adipiscing Elit</h4>
                     </div>
                     <img
-                      src="./../../../resources/img/portfolio/09-small.jpg"
+                      src={Gallery90}
                       className="img-responsive"
                       alt="Project Title"
                     />

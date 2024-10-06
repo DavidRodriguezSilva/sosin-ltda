@@ -8,15 +8,15 @@ const Presentation = () => {
               <div className="intro-text presentation">
                 <h1>SOSIN</h1>
                 <p style={{ padding: 0 }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sed dapibus leo nec ornare diam sed commodo nibh ante
-                  facilisis bibendum.
+                Somos una empresa colombiana de seguridad
+            privada que se compromete con la protección y promoción de la salud
+            de todos los involucrados en sus operaciones,
                 </p>
                 <a
                   href="#features"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  Learn More
+                  leer mas...
                 </a>
               </div>
             </div>

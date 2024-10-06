@@ -3,7 +3,7 @@ const Testimonials = () => {
         <div id="testimonials">
       <div className="container">
         <div className="section-title text-center">
-          <h2>What our clients say</h2>
+          <h2>Nuestros clientes</h2>
         </div>
         <div className="row">
           <div className="col-md-4">
