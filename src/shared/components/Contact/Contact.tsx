@@ -1,104 +1,85 @@
 const Contact = () => {
   return (
-      <div id="contact">
-    <div className="container">
-      <div className="col-md-8">
-        <div className="row">
-          <div className="section-title">
-            <h2>Get In Touch</h2>
-            <p>
-              Please fill out the form below to send us an email and we will
-              get back to you as soon as possible.
-            </p>
-          </div>
+    <div id="contact">
+      <div className="contact-container">
+        <div className="contact-form">
+          <h2>¡Pongámonos en contacto!</h2>
+          <p>
+            Registre sus datos y en unos minutos un experto comercial lo contactará para asesorarlo.
+          </p>
           <form name="sentMessage" id="contactForm" noValidate>
-            <div className="row">
-              <div className="col-md-6">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    id="name"
-                    className="form-control"
-                    placeholder="Name"
-                    required={true}
-                  />
-                  <p className="help-block text-danger"></p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-group">
-                  <input
-                    type="email"
-                    id="email"
-                    className="form-control"
-                    placeholder="Email"
-                    required={true}
-                  />
-                  <p className="help-block text-danger"></p>
-                </div>
-              </div>
+            <div className="form-group">
+              <input
+                type="text"
+                id="name"
+                className="form-control"
+                placeholder="Nombre completo *"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="email"
+                id="email"
+                className="form-control"
+                placeholder="Correo electrónico *"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                id="phone"
+                className="form-control"
+                placeholder="Teléfono de contacto *"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                id="city"
+                className="form-control"
+                placeholder="Ciudad *"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                id="company"
+                className="form-control"
+                placeholder="Compañía *"
+                required
+              />
+            </div>
+            <div className="form-group">
+              <select id="service" className="form-control" required>
+                <option>Servicio de interés *</option>
+                <option value="1">Servicio 1</option>
+                <option value="2">Servicio 2</option>
+              </select>
             </div>
             <div className="form-group">
               <textarea
-                name="message"
-                id="message"
+                id="comments"
                 className="form-control"
                 rows={4}
-                placeholder="Message"
+                placeholder="Comentarios"
                 required
               ></textarea>
-              <p className="help-block text-danger"></p>
             </div>
-            <div id="success"></div>
-            <button type="submit" className="btn btn-custom btn-lg">
-              Send Message
+            <button type="submit" className="btn btn-custom">
+              Enviar
             </button>
           </form>
         </div>
-      </div>
-      <div className="col-md-3 col-md-offset-1 contact-info">
-        <div className="contact-item">
-          <h3>Contact Info</h3>
-          <p>
-            <span><i className="fa fa-map-marker"></i> Address</span>4321
-            California St,<br />
-            San Francisco, CA 12345
-          </p>
-        </div>
-        <div className="contact-item">
-          <p>
-            <span><i className="fa fa-phone"></i> Phone</span> +1 123 456 1234
-          </p>
-        </div>
-        <div className="contact-item">
-          <p>
-            <span><i className="fa fa-envelope-o"></i>Email</span>info@company.com
-          </p>
-        </div>
-      </div>
-      <div className="col-md-12">
-        <div className="row">
-          <div className="social">
-            <ul>
-              {/* <li>
-                <a href=""><i className="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href=""><i className="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href=""><i className="fa fa-google-plus"></i></a>
-              </li>
-              <li>
-                <a href=""><i className="fa fa-youtube"></i></a>
-              </li> */}
-            </ul>
-          </div>
+        <div className="contact-image">
+          <img src="https://via.placeholder.com/400x400" alt="Contact image" />
         </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
