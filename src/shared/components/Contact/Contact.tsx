@@ -1,3 +1,5 @@
+import Gallery1 from "../../../resources/logoBlanco1.png";
+
 const Contact = () => {
   return (
     <div id="contact">
@@ -75,7 +77,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="contact-image">
-          <img src="https://via.placeholder.com/400x400" alt="Contact image" />
+          <img src={Gallery1} alt="Contact image" />
         </div>
       </div>
     </div>

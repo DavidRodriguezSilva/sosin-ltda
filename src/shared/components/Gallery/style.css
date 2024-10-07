@@ -1,3 +1,9 @@
+#portfolio {
+	padding: 100px 0;
+	background:  #D8B668;
+	color: #EAEAEA;
+  }
+
 .carousel {
 	display: flex;
 	justify-content: space-between;

@@ -1,14 +1,66 @@
 #footer {
-	background: #722F37 ;
-	padding: 30px 0;
-}
-#footer p {
-	color: #EAEAEA ;
+	background: #722F37;
+	padding: 20px 0;
+	color: #D8B668;
 	font-size: 14px;
-}
-#footer a {
-	color: #D8B668 ;
-}
-#footer a:hover {
-	border-bottom: 2px solid #D8B668 ;
-}
+  }
+  
+  .footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  .footer-left {
+	display: flex;
+	align-items: flex-start; /* Alinea el logo y el texto en la parte superior */
+  }
+  
+  .footer-logo {
+	width: 60px; /* Ajusta el tamaño según tu logo */
+	height: auto;
+	margin-right: 15px;
+  }
+  
+  .footer-text p {
+	margin: 0;
+	line-height: 3; /* Para dar espacio entre las líneas */
+	color: #D8B668;
+  }
+  
+  .footer-text a {
+	color: #000000; /* Cambiar el color del enlace a negro */
+	text-decoration: none;
+  }
+  
+  .footer-text a:hover {
+	border-bottom: 2px solid #000000;
+  }
+  
+  .footer-links {
+	margin-top: 10px;
+  }
+  
+  .footer-links a {
+	color: #ccc;
+	margin: 0 5px;
+	text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+	text-decoration: underline;
+  }
+  
+  .footer-right a {
+	color: #000000;
+	margin-left: 15px;
+	font-size: 18px;
+  }
+  
+  .footer-right a:hover {
+	color: #fff;
+  }
+  
