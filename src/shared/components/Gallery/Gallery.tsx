@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 // Imágenes
 import Gallery1 from "../../../resources/img/portfolio/01-large.jpg";
@@ -18,7 +18,7 @@ const Gallery = () => {
     { large: Gallery2, small: Gallery20 },
     { large: Gallery3, small: Gallery30 },
     { large: Gallery4, small: Gallery40 },
-    { large: Gallery5, small: Gallery50 }
+    { large: Gallery5, small: Gallery50 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,35 +49,59 @@ const Gallery = () => {
           <p>En estas imagenes podras ver lo que hacemos, nuestro trabajo.</p>
         </div>
         <div className="carousel">
-          <button className="button-left" onClick={prevImage}>&lt;</button>
+          <button className="button-left" onClick={prevImage}>
+            &lt;
+          </button>
           <div className="carousel-container">
             {/* Primera columna: Imagen pequeña izquierda */}
             <div className="small-image-container">
-              <img src={images[(currentIndex - 1 + images.length) % images.length].small} alt="Small" className="small-image" />
+              <img
+                src={
+                  images[(currentIndex - 1 + images.length) % images.length]
+                    .small
+                }
+                alt="Small"
+                className="small-image"
+              />
             </div>
             {/* Segunda columna: Imagen grande central */}
             <div className="large-image-container" onClick={toggleModal}>
-              <img src={images[currentIndex].large} alt="Large" className="large-image" />
+              <img
+                src={images[currentIndex].large}
+                alt="Large"
+                className="large-image"
+              />
             </div>
             {/* Tercera columna: Imagen pequeña derecha */}
             <div className="small-image-container">
-              <img src={images[(currentIndex + 1) % images.length].small} alt="Small" className="small-image" />
+              <img
+                src={images[(currentIndex + 1) % images.length].small}
+                alt="Small"
+                className="small-image"
+              />
             </div>
           </div>
-          <button className="button-right" onClick={nextImage}>&gt;</button>
+          <button className="button-right" onClick={nextImage}>
+            &gt;
+          </button>
         </div>
 
         {/* Modal para imagen grande */}
         {isModalOpen && (
           <div className="modal">
-            <span className="close-modal" onClick={toggleModal}>&times;</span>
-            <img className="modal-content" src={images[currentIndex].large} alt="Modal Large" />
+            <span className="close-modal" onClick={toggleModal}>
+              &times;
+            </span>
+            <img
+              className="modal-content"
+              src={images[currentIndex].large}
+              alt="Modal Large"
+            />
           </div>
         )}
       </div>
     </div>
   );
 };
-
 
 export default Gallery;

@@ -15,63 +15,60 @@ body {
   margin: 0;
 }
 
-
-/* Header Section */
+/* Ajuste del contenedor principal */
 .intro {
-	display: table;
-	width: 100%;
-	padding: 0;
-	background: url(../resources/Camaras\ de\ vigilancia.gif) center center no-repeat;
-	background-color: #e5e5e5;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	background-size: contain;
-	-o-background-size: contain;
-}
-.intro .overlay {
-	background: rgba(0,0,0,0.2);
-}
-.intro h1 {
+	display: flex;
+	height: 100vh;
+	background-color: #722F37; /* Fondo rojo oscuro */
+  }
+  
+  /* Sección izquierda (texto) */
+  .left {
+	width: 50%; /* La mitad de la pantalla */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start; /* Alinea el texto al borde izquierdo */
+	padding-left: 50px; /* Ajusta el padding al borde izquierdo */
+	background-color: #722F37; /* Fondo amarillo */
+  }
+  
+  /* Sección de las palabras */
+  .text-section {
+	position: relative;
+  }
+  
+  .text-section h1 {
 	font-family: 'Raleway', sans-serif;
-	color: #fff;
-	font-size: 82px;
+	font-size: 72px; /* Mantiene el tamaño grande */
+	color: #000; /* Color negro */
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-top: 0;
-	margin-bottom: 10px;
-}
-.intro h1 span {
-	font-weight: 800;
-	color: #5ca9fb;
-}
-.intro p {
-	color: #fff;
-	font-size: 22px;
-	font-weight: 300;
-	line-height: 30px;
-	margin: 0 auto;
-	margin-bottom: 60px;
-}
-.intro-text {
-	position: relative;
-	text-align: left;
-	z-index: 10;
-}
-.btn-custom {
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	color: #fff;
-	background-color: #5ca9fb;
-	background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-	padding: 14px 34px;
-	letter-spacing: 1px;
-	margin: 0;
-	font-size: 15px;
-	font-weight: 500;
-	border-radius: 25px;
-	transition: all 0.5s linear;
-	border: 0;
-}
-.presentation {
-	top: 65vh;
-}
+  }
+  
+  /* Texto estático "SOMOS" */
+  .static-text {
+	color: rgb(255, 255, 255);
+  }
+  
+  /* Texto cambiante */
+  #changing-text {
+	color: #ffffff;
+	transition: opacity 1s ease-in-out;
+  }
+  
+  /* Sección derecha (GIF) */
+  .right {
+	width: 50%; /* La otra mitad de la pantalla */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #722F37; /* Fondo para la sección del GIF */
+  }
+  
+  /* El GIF ocupa el 100% de la sección derecha */
+  .video-section {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Asegura que el GIF ocupe toda la sección */
+  }
+  

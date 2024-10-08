@@ -8,59 +8,38 @@
   .footer-content {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
   }
   
-  .footer-left {
-	display: flex;
-	align-items: flex-start; /* Alinea el logo y el texto en la parte superior */
+  .footer-column {
+	flex: 1;
+	text-align: center;
   }
-  
-  .footer-logo {
-	width: 60px; /* Ajusta el tamaño según tu logo */
+  .super-logo{
+	width: 200px;
+  }
+  .footer-logo{
+	width: 80px; /* Ajusta el tamaño según sea necesario */
 	height: auto;
-	margin-right: 15px;
+	margin-bottom: 10px;
   }
   
-  .footer-text p {
-	margin: 0;
-	line-height: 3; /* Para dar espacio entre las líneas */
+  .footer-column p {
+	margin: 5px 0;
+  }
+  
+  .footer-column p strong {
 	color: #D8B668;
   }
   
-  .footer-text a {
-	color: #000000; /* Cambiar el color del enlace a negro */
-	text-decoration: none;
+  #footer p {
+	color: #D8B668;
   }
   
-  .footer-text a:hover {
-	border-bottom: 2px solid #000000;
-  }
-  
-  .footer-links {
-	margin-top: 10px;
-  }
-  
-  .footer-links a {
-	color: #ccc;
-	margin: 0 5px;
-	text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-	text-decoration: underline;
-  }
-  
-  .footer-right a {
-	color: #000000;
-	margin-left: 15px;
-	font-size: 18px;
-  }
-  
-  .footer-right a:hover {
-	color: #fff;
+  .footer-column img {
+	margin-bottom: 10px;
   }
   
