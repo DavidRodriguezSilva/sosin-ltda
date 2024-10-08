@@ -1,61 +1,97 @@
 const Header = () => {
+  const handleScroll = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    sectionId: string
+  ) => {
+    event.preventDefault()
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
-    <header id="header" className="header-top-fixed">
-      <div className="full-screen-block">
-        <div className="header-body header-body-fixed" id="header-body-fixed">
-          <div id="container-fixed">
-            <nav className="navbar navbar-default navbar-expand-md">
-              <div className="navbar-header">
-                <a className="header-logo" href="/">
+    <header id='header' className='header-top-fixed'>
+      <div className='full-screen-block'>
+        <div className='header-body header-body-fixed' id='header-body-fixed'>
+          <div id='container-fixed'>
+            <nav className='navbar navbar-default navbar-expand-md'>
+              <div className='navbar-header'>
+                <a className='header-logo' href='/'>
                   <img
-                    src={require("./../../../resources/logo.png")}
-                    alt="logo"
+                    src={require('./../../../resources/logo.png')}
+                    alt='logo'
                     style={{
-                      width: "13vw",
-                      height: "6vh",
-                      objectFit: "contain",
-                      objectPosition: "center",
+                      width: '13vw',
+                      height: '6vh',
+                      objectFit: 'contain',
+                      objectPosition: 'center',
                     }}
                   />
                 </a>
                 <button
-                  type="button"
-                  className="navbar-toggle"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#bs-example-navbar-collapse-1"
-                  aria-controls="navbarNav"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
+                  type='button'
+                  className='navbar-toggle'
+                  data-bs-toggle='collapse'
+                  data-bs-target='#bs-example-navbar-collapse-1'
+                  aria-controls='navbarNav'
+                  aria-expanded='false'
+                  aria-label='Toggle navigation'
                 >
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
+                  <span className='icon-bar'></span>
+                  <span className='icon-bar'></span>
+                  <span className='icon-bar'></span>
+                  <span className='icon-bar'></span>
                 </button>
               </div>
               <div
-                className="collapse navbar-collapse"
-                id="bs-example-navbar-collapse-1"
+                className='collapse navbar-collapse'
+                id='bs-example-navbar-collapse-1'
               >
                 <ul
-                  className="nav navbar-nav navbar-right menu-item-5"
-                  id="navbar-full"
+                  className='nav navbar-nav navbar-right menu-item-5'
+                  id='navbar-full'
                 >
-                  <li className="about">
-                    <span className="rotated-title effect">Sobre Nosotros</span>
-                    <a className="link-item" href="#about">Sobre Nosotros</a>
+                  <li className='about'>
+                    <span className='rotated-title effect'>Sobre Nosotros</span>
+                    <a
+                      className='link-item'
+                      href='#about'
+                      onClick={(event) => handleScroll(event, 'about')}
+                    >
+                      Sobre Nosotros
+                    </a>
                   </li>
-                  <li className="service">
-                    <span className="rotated-title effect">Servicios</span>
-                    <a className="link-item" href="#services">Servicios</a>
+                  <li className='service'>
+                    <span className='rotated-title effect'>Servicios</span>
+                    <a
+                      className='link-item'
+                      href='#services'
+                      onClick={(event) => handleScroll(event, 'services')}
+                    >
+                      Servicios
+                    </a>
                   </li>
-                  <li className="work">
-                    <span className="rotated-title effect">Nuestro Trabajo</span>
-                    <a className="link-item" href="#testimonials">Nuestro Trabajo</a>
+                  <li className='work'>
+                    <span className='rotated-title effect'>
+                      Nuestro Trabajo
+                    </span>
+                    <a
+                      className='link-item'
+                      href='#testimonials'
+                      onClick={(event) => handleScroll(event, 'testimonials')}
+                    >
+                      Nuestro Trabajo
+                    </a>
                   </li>
-                  <li className="contact">
-                    <span className="rotated-title effect">Cotización</span>
-                    <a className="link-item" href="#contact">Cotización</a>
+                  <li className='contact'>
+                    <span className='rotated-title effect'>Cotización</span>
+                    <a
+                      className='link-item'
+                      href='#contact'
+                      onClick={(event) => handleScroll(event, 'contact')}
+                    >
+                      Cotización
+                    </a>
                   </li>
                 </ul>
               </div>

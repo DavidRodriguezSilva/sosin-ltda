@@ -1,48 +1,64 @@
-import React, { useEffect } from 'react';
-import CamarasGif from '../../../resources/Camaras de vigilancia.gif'; // Importamos el GIF correctamente
+import React, { useEffect } from 'react'
+import CamarasGif from '../../../resources/Camaras de vigilancia.gif' // Importamos el GIF correctamente
 
 const Presentation: React.FC = () => {
   useEffect(() => {
-    const words = ["SOSIN", "SEGURIDAD", "TRANSPARENCIA"];
-    let index = 0;
+    const words = [
+      'SOSIN',
+      'SEGURIDAD',
+      'TRANSPARENCIA',
+      'CONFIANZA',
+      'PROTECCIÓN',
+      'INNOVACIÓN',
+      'COMPROMISO',
+      'EFICIENCIA',
+      'RESPALDO',
+      'VIGILANCIA',
+      'EXCELENCIA',
+      'TRANQUILIDAD',
+      'PROFESIONALISMO',
+      'SEGURIDAD TOTAL',
+      'REACTIVIDAD',
+    ]
+
+    let index = 0
 
     const changeText = () => {
-      const textElement = document.getElementById("changing-text");
+      const textElement = document.getElementById('changing-text')
       if (textElement) {
-        textElement.style.opacity = "0";
+        textElement.style.opacity = '0'
         setTimeout(() => {
-          textElement.textContent = words[index];
-          textElement.style.opacity = "1";
-          index = (index + 1) % words.length;
-        }, 500); // Delay antes de cambiar la palabra
+          textElement.textContent = words[index]
+          textElement.style.opacity = '1'
+          index = (index + 1) % words.length
+        }, 800)
       }
-    };
+    }
 
-    const intervalId = setInterval(changeText, 3000); // Cada 3 segundos
-    return () => clearInterval(intervalId); // Limpiamos el intervalo al desmontar el componente
-  }, []);
+    const intervalId = setInterval(changeText, 2500)
+    return () => clearInterval(intervalId)
+  }, [])
 
   return (
-    <header id="header" className="header-container">
-      <div className="intro">
-        {/* Sección de las palabras (izquierda) */}
-        <div className="left">
-          <div className="text-section">
+    <header id='header' className='header-container'>
+      <div className='intro'>
+        <div className='text-on-gif'>
+          <img
+            src={CamarasGif}
+            alt='Cámaras de vigilancia'
+            className='video-section'
+          />
+          <div className='text-section'>
             <h1>
-              <span className="static-text">SOMOS</span> {/* Texto estático */}
+              <span className='static-text'>SOMOS</span>
               <br />
-              <span id="changing-text" className="changing-text">SOSIN</span> {/* Texto que cambia */}
+              <span id='changing-text' className='changing-text'></span>
             </h1>
           </div>
         </div>
-
-        {/* Sección del GIF (derecha) */}
-        <div className="right">
-          <img src={CamarasGif} alt="Cámaras de vigilancia" className="video-section" />
-        </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Presentation;
+export default Presentation
