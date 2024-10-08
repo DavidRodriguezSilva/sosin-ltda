@@ -1,0 +1,44 @@
+{
+  // Auto guardado
+  "files.autoSave": "afterDelay",
+  // Configuracion Editor
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  // "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.autoIndent": "full",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 2,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Varios
+  "prettier.bracketSpacing": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "editor.showUnused": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#61b7a3",
+    "activityBar.background": "#61b7a3",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#f2e9f5",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#61b7a3",
+    "statusBar.background": "#489d89",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#387a6a",
+    "statusBarItem.remoteBackground": "#489d89",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#489d89",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#489d8999",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#489d89",
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.defaultInterpreterPath": ".\\Scripts\\python.exe"
+}
