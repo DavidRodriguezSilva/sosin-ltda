@@ -1,43 +1,293 @@
-#features {
-  padding: 100px 0;
-  background: #f6f6f6;
+/* Estilos generales para las secciones */
+.section-title {
+  font-weight: 800;
+  padding-bottom: 2rem;
 }
 
-#features i.fa {
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
+/* Bienestar Organizacional Styles */
+.bienestar-organizacional {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9; /* Fondo suave para un mejor contraste */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.bienestar-organizacional .left {
+  width: 45%;
+  padding: 1rem;
+}
+
+.bienestar-organizacional .right {
+  width: 45%;
+  text-align: center;
+}
+
+.bienestar-organizacional img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bienestar-organizacional hr {
+  width: 3rem;
+  border: 2px solid black;
+  margin: 1rem 0;
+}
+
+/* Button Styling */
+.bienestar-organizacional .btn {
+  padding: 0.8rem 2rem;
+  background-color: #8a5c2e; /* Color basado en la imagen */
   color: #fff;
-  width: 100px;
-  height: 100px;
-  padding: 30px 0;
-  border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.bienestar-organizacional .btn:hover {
+  background-color: #54391e; /* Más oscuro en hover */
+}
+
+.certificaciones, .otra-seccion {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.certificaciones h2, .otra-seccion h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.certificaciones {
+  padding: 50px ;
+  text-align: center;
+  background-color: #EAEAEA;
+}
+
+.certificaciones h2 {
+  color: #000000;
+  font-size: 32px; /* Título más grande */
+  font-weight: 600; /* Negrita */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.certificaciones h2::after {
+  content: '';
+  width: 60px; /* Línea más pequeña debajo del título */
+  height: 3px;
+  background-color: #000000; /* Puedes cambiar el color si lo deseas */
+  display: block;
+  margin: 10px auto 0;
+}
+
+.certificaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 1px; /* Espacio más reducido entre imágenes */
+  justify-items: center; /* Centra las imágenes en la cuadrícula */
+}
+
+.certificaciones-grid img {
+  width: 80%;
+  max-width: 80px; /* Tamaño ajustado de las imágenes */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de estadísticas */
 #stats {
-  padding: 100px 0;
-  background-image: url("./../../../resources/bg6.jpg"); /* Cambia esto por la ruta de tu imagen */
-  background-size: cover;
-  background-position: center;
-  color: #fff;
+  padding: 50px 10px; /* Espaciado superior e inferior */
+  background-image: url("./../../../resources/bg6.jpg"); /* Imagen de fondo */
+  background-size: cover; /* Cubrir toda la sección */
+  background-position: center; /* Centrar la imagen */
+  color: #fff; /* Color del texto */
+}
+
+#stats .row {
+  display: flex; /* Flex para alinear elementos */
+  justify-content: space-around; /* Espaciado igual entre elementos */
+  text-align: center; /* Centrado de texto */
 }
 
 #stats i.fa {
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
-  color: #fff;
-  width: 100px;
-  height: 100px;
-  padding: 30px 0;
-  border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  font-size: 38px; /* Tamaño de los iconos */
+  margin-bottom: 10px; /* Margen inferior */
+  transition: all 0.5s; /* Transición suave */
+  color: #fff; /* Color blanco para los iconos */
+  width: 100px; /* Ancho fijo para los iconos */
+  height: 100px; /* Alto fijo para los iconos */
+  padding: 30px 0; /* Espaciado alrededor de los iconos */
+  border-radius: 50%; /* Bordes redondeados */
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); /* Gradiente de fondo */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05); /* Sombra */
 }
 
 .count {
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 48px; /* Tamaño del número */
+  font-weight: bold; /* Negrita para el número */
 }
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  #stats .row {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+  }
+
+  #stats .col-md-3 {
+    margin-bottom: 20px; /* Margen inferior para los elementos */
+  }
+}
+
+
+/* Seccion de Galeria, carrusel de clientes  */
+
+#portfolio {
+	padding: 0px 0;
+	background:  #FFFFFF;
+	color: #000000;
+  text-align: center;
+  }
+
+  #portfolio h2 {
+    font-size: 36px; /* Título más grande */
+    font-weight: 800; /* Negrita */
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  #portfolio h2::after {
+    content: '';
+    width: 60px; /* Línea pequeña debajo del título */
+    height: 3px;
+    background-color: #000000; /* Puedes cambiar el color si lo deseas */
+    display: block;
+    margin: 10px auto 0;
+  }
+
+.carousel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 500px;
+  }
+  
+  .carousel-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: 1/3 para las imágenes pequeñas y 2/3 para la imagen grande */
+	gap: 20px;
+	align-items: center;
+	width: 100%;
+  }
+  
+  .small-image-container {
+	text-align: center; /* Centra las imágenes pequeñas */
+	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	opacity: 0.6;
+  }
+  
+  .small-image-container:hover {
+	opacity: 1;
+	transform: scale(1.05); /* Efecto al pasar el cursor */
+  }
+  
+  .small-image {
+	width: 80%; /* Ajusta el tamaño de las imágenes pequeñas */
+	height: auto;
+  }
+  
+  .large-image-container {
+	text-align: center;
+  }
+  
+  .large-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+  .button-left, .button-right {
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #333;
+	z-index: 1;
+  }
+  
+  .button-left {
+	position: absolute;
+	left: 20px;
+  }
+  
+  .button-right {
+	position: absolute;
+	right: 20px;
+  }
+  
+  
+  
+/* Estilos del modal */
+.modal {
+	display: block;
+	position: absolute; /* Cambiamos a 'absolute' para que se quede dentro de la sección */
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: auto;
+  }
+  
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 90%;
+	max-width: 80vw;
+	max-height: 80vh;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+  .close-modal {
+	position: absolute;
+	top: 20px;
+	right: 35px;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 11;
+  }
+  
+  .close-modal:hover,
+  .close-modal:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* Efecto sin transición */
+  .modal-content {
+	/* Quitamos la animación */
+	transform: scale(1);
+  }
+  
+  /* Asegurar que el modal esté en la sección 'gallery' */
+  .gallery {
+	position: relative; /* Necesario para que el modal se posicione dentro */
+  }
+  
+  /* Evitar scroll cuando el modal está abierto */
+  body.modal-open {
+	overflow: hidden;
+  }
+  

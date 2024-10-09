@@ -5,7 +5,7 @@ const ServiceSection = () => {
     <div id="services" className="text-center" style={{ padding: "10rem" }}>
       <div className="container">
         <div className="section-title">
-          <h2>Nuestros Servicios</h2>
+          <h2>NUESTROS SERVICIOS</h2>
           <p></p>
         </div>
         <div className="row">

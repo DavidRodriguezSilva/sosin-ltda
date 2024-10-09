@@ -9,6 +9,7 @@ import Testimonials from '../../shared/components/Testimonials/Testimonials'
 import TeamSection from '../../shared/components/Team Section/TeamSection'
 import Contact from '../../shared/components/Contact/Contact'
 import Quotation from '../../shared/components/Quotation/Quotation'
+import CoverageSection from '../../shared/components/Map/CoverageSection'
 
 export const Home = () => {
   return (
@@ -22,6 +23,7 @@ export const Home = () => {
       {/* <Testimonials /> */}
       <TeamSection />
       <Quotation />
+      <CoverageSection/>
       <Contact />
       <Footer />
     </>
