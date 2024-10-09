@@ -35,14 +35,15 @@ const Feature = () => {
       Cifras
       Clientes (Carrusel)
       {/* Sección de "¿En qué nos caracterizamos?" */}
-      <div id='features' className='text-center'>
-        <div className='container'>
-          <div className='col-md-10 col-md-offset-1 section-title'>
-            <h2>¿En qué nos caracterizamos?</h2>
-          </div>
-          <div className='row'>
-            <div className='col-xs-6 col-md-3'>
-              <i className='fa fa-comments-o'></i>
+      <div id="features" className="text-center">
+        <div className="container">
+          <div className="col-md-10 col-md-offset-1 section-title">
+          <h2 style={{ fontWeight: 800, paddingBottom: '2rem' }}>
+                SOLUCIONES INNOVADORAS Y DE ALTA CALIDAD
+              </h2>          </div>
+          <div className="row">
+            <div className="col-xs-6 col-md-3">
+              <i className="fa fa-comments-o"></i>
               <h3>Seguridad Integral</h3>
               <p>
                 Ofrecemos soluciones completas de seguridad adaptadas a las
@@ -80,6 +81,9 @@ const Feature = () => {
           </div>
         </div>
       </div>
+
+
+
       {/* Sección de estadísticas con animación */}
       <div id='stats' className='text-center'>
         <div className='container'>
