@@ -1,23 +1,28 @@
 {
   // Auto guardado
-  "files.autoSave": "afterDelay",
+  // "files.autoSave": "afterDelay",
   // Configuracion Editor
   "editor.linkedEditing": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
-  // "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modifications",
   "editor.autoIndent": "full",
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.indentSize": "tabSize",
   "editor.tabSize": 2,
-  "diffEditor.ignoreTrimWhitespace": false,
-  // Varios
-  "prettier.bracketSpacing": true,
-  "prettier.singleQuote": true,
-  "prettier.jsxSingleQuote": true,
-  "editor.showUnused": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  // Error lens
+  "errorLens.codeLensTemplate": "$severity $message $source",
+  // React
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // PeackColor
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#684259",
     "activityBar.background": "#684259",
@@ -35,10 +40,33 @@
     "titleBar.activeBackground": "#492e3e",
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#492e3e99",
-    "titleBar.inactiveForeground": "#e7e7e799"
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "editorUnnecessaryCode.border": "#ff0000"
   },
   "peacock.color": "#492e3e",
-  "python.terminal.activateEnvironment": true,
-  "python.terminal.activateEnvInCurrentTerminal": true,
-  "python.defaultInterpreterPath": ".\\Scripts\\python.exe"
+  // Diccionario
+  "typescript.validate.enable": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  // Varios
+  "prettier.bracketSpacing": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "editor.showUnused": true,
+  "sonarlint.output.showVerboseLogs": true,
+  "sonarlint.output.showAnalyzerLogs": true,
+  "sonarlint.trace.server": "off",
+  "sonarlint.disableTelemetry": true,
+  "sonarlint.connectedMode.project": {
+    "connectionId": "David-Rodriguez",
+    "projectKey": "cesionbnk-front-main"
+  },
+  // Prettier
+  "prettier.printWidth": 160,
+  "prettier.trailingComma": "es5",
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+  "prettier.proseWrap": "preserve",
+  "prettier.useTabs": false,
+  "prettier.quoteProps": "as-needed",
+  "prettier.htmlWhitespaceSensitivity": "css"
 }
