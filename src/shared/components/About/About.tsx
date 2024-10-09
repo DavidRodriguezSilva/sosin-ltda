@@ -19,15 +19,8 @@ const About = () => {
                 clientes. Ofrecemos un enfoque integral que combina protección
                 presencial con tecnología electrónica avanzada, adaptándonos a
                 las necesidades específicas de cada cliente.
-                <br />
-                Nuestro sólido Sistema de Gestión de Seguridad y Salud en el
-                Trabajo (SG-SST) cumple rigurosamente con las normativas legales
-                vigentes, asegurando un entorno seguro y eficiente tanto para
-                nuestros colaboradores como para quienes confían en nosotros.
-                Con un equipo de profesionales altamente capacitados,
-                garantizamos tranquilidad y protección en todo momento. Confía
-                en nosotros para salvaguardar lo que más valoras.
               </p>
+              <a className='text-muted' href='about'>Leer mas ...</a>
             </div>
           </div>
         </div>
