@@ -2,7 +2,13 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <link
+      rel="shortcut icon"
+      href="%PUBLIC_URL%/favicon.ico"
+      type="image/x-icon"
+    />
     <title>SOSIN | Empresa de Vigilancia y Seguridad Privada</title>
     <!-- Metadatos -->
     <meta
@@ -11,12 +17,13 @@
     />
     <meta
       name="description"
-      content="SOSIN PRIVATE SECURITY LTDA es una empresa de vigilancia y seguridad privada con personal experimentado. Ofrecemos una amplia gama de servicios de seguridad para empresas y particulares."
+      content="Empresa de vigilancia y seguridad privada con personal experimentado. Ofrecemos servicios de seguridad para empresas y particulares."
     />
     <meta
       name="keywords"
       content="vigilancia, seguridad, privada, empresas, particulares, SOSIN, PRIVATE, SECURITY, LTDA, servicios de seguridad, protección, guardias de seguridad, sistemas de seguridad, seguridad para empresas, SOSIN seguridad privada, seguridad privada personalizada, seguridad física, seguridad patrimonial, SOSIN LTDA, seguridad en Colombia, SOSIN seguridad privada, security, private, companies, individuals, security services, protection, security guards, security systems, business security, personalized private security, physical security, asset security, security in Colombia, private security company, corporate security"
     />
+    <link rel="canonical" href="https://www.sosinltda.com" />
     <meta name="author" content="SOSIN PRIVATE SECURITY LTDA" />
     <meta name="copyright" content="2024 SOSIN PRIVATE SECURITY LTDA" />
     <meta name="robots" content="index,follow" />
@@ -33,11 +40,11 @@
     />
     <meta
       property="og:description"
-      content="SOSIN PRIVATE SECURITY LTDA es una empresa de vigilancia y seguridad privada con personal experimentado. Ofrecemos una amplia gama de servicios de seguridad para empresas y particulares."
+      content="Empresa de vigilancia y seguridad privada con personal experimentado. Ofrecemos servicios de seguridad para empresas y particulares."
     />
     <!-- ToDo agregar el enlace la imagen -->
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="www.sosinltda.com" />
+    <meta property="og:image" content="www.sosinltda.com/logo.png" />
+    <meta property="og:url" content="https://www.sosinltda.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SOSIN PRIVATE SECURITY LTDA" />
     <meta property="og:locale" content="es_CO" />
@@ -45,4 +52,40 @@
   <body>
     <div id="root"></div>
   </body>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SOSIN PRIVATE SECURITY LTDA",
+      "url": "https://www.sosinltda.com",
+      "location": {
+        "@type": "Place",
+        "name": "Sogamoso, Colombia",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sogamoso",
+          "addressRegion": "Boyacá",
+          "addressCountry": "Colombia"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 5.70776,
+          "longitude": -72.940338
+        }
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "telephone": "+57 123456789",
+        "areaServed": "CO",
+        "availableLanguage": "es"
+      },
+      "founder": "SOSIN PRIVATE SECURITY LTDA",
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "SOSIN PRIVATE SECURITY LTDA",
+        "copyrightYear": "2024"
+      }
+    }
+  </script>
 </html>
