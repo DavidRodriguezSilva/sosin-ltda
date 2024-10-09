@@ -103,11 +103,4 @@ const Header = () => {
   )
 }
 
-const HeaderMobile = () => {
-  return <></>
-}
-const HeaderDesktop = () => {
-  return <></>
-}
-
 export default Header
