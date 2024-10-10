@@ -1,4 +1,4 @@
-import Header from '../../shared/components/Header_temp/Header'
+import Header from '../../shared/components/Header/Header'
 import Presentation from './components/Presentation'
 import Footer from '../../shared/components/Footer/Footer'
 import Feature from '../../shared/components/OurServices/OurServices'
