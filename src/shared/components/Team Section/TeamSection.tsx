@@ -11,7 +11,7 @@ const TeamSection = () => {
           <h2>NUESTRO EQUIPO</h2>
           <p>
             Nuestro equipo de trabajo está conformado por profesionales
-            altamente capacitados y comprometidos con la excelencia
+            altamente capacitados y comprometidos con la excelencia.
           </p>
         </div>
 

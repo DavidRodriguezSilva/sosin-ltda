@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'; // Asegúrate de importar el archivo CSS
+import { useState, useEffect, useCallback } from 'react';
 import Gallery6 from '../../../resources/GraficaCualidades.png';
 import Gallery7 from '../../../resources/iso1.png';
 import Gallery8 from '../../../resources/iso2.png';
@@ -19,7 +19,7 @@ const Feature = () => {
   useEffect(() => {
     // Lógica para los contadores
     const counters = document.querySelectorAll('.count');
-    const speed = 1400; // Ajusta la velocidad si lo necesitas
+    const speed = 100; 
 
     counters.forEach((counter) => {
       const updateCount = () => {
@@ -38,7 +38,7 @@ const Feature = () => {
 
       updateCount();
     });
-  }, []); // Efecto que se ejecutará una sola vez al montar el componente
+  }, []); 
 
   const images = [
     { large: Gallery1, small: Gallery10 },
@@ -49,7 +49,7 @@ const Feature = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isModalOpen, setModalOpen] = useState(false); // Estado del modal
+  const [isModalOpen, setModalOpen] = useState(false); 
 
   const nextImage = useCallback(() => {
     setCurrentIndex((currentIndex + 1) % images.length);
@@ -64,18 +64,16 @@ const Feature = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextImage, 7000); // Cambiar cada 7 segundos
+    const interval = setInterval(nextImage, 7000); 
     return () => clearInterval(interval);
   }, [nextImage]);
 
   return (
     <div>
       <h2 className='section-title'>NUESTRO SERVICIO</h2>
-      {/* Sección de Bienestar Organizacional */}
       <div className='bienestar-organizacional' id='bienestar-organizacional'>
         <div className='left'>
-          <h2 className='section-title'>Bienestar Organizacional</h2>
-          <hr />
+          <h2 className='section-title'>BIENESTAR ORGANIZACIONAL</h2>
           <p>
             En SOSIN Private Security, entendemos que el bienestar de nuestros
             empleados es clave para el éxito de nuestra organización. Por eso,
@@ -88,9 +86,10 @@ const Feature = () => {
           <img src={Gallery6} alt='Bienestar' />
         </div>
       </div>
-      {/* Sección de CERTIFICACIONES */}
+
       <div className='certificaciones' id='certificaciones'>
-        <h2>CERTIFICACIONES</h2>
+        <h2 className='section-title'>CERTIFICACIONES</h2>
+        <hr />
         <div className='certificaciones-grid'>
           <img src={Gallery7} alt='Certificación 1' />
           <img src={Gallery8} alt='Certificación 2' />
@@ -98,18 +97,18 @@ const Feature = () => {
           <img src={Gallery100} alt='Certificación 4' />
         </div>
       </div>
-      {/* Sección de clientes (Carrusel) */}
+
       <div id='clientes-carousel' className='text-center'>
         <div className='container'>
           <div className='section-title'>
-            <h2>CLIENTES</h2>
+            <h2 className='section-title'>CLIENTES</h2>
+            <hr />
           </div>
           <div className='carousel'>
             <button className='button-left' onClick={prevImage}>
               &lt;
             </button>
             <div className='carousel-container'>
-              {/* Primera columna: Imagen pequeña izquierda */}
               <div className='small-image-container'>
                 <img
                   src={
@@ -120,7 +119,6 @@ const Feature = () => {
                   className='small-image'
                 />
               </div>
-              {/* Segunda columna: Imagen grande central */}
               <div className='large-image-container' onClick={toggleModal}>
                 <img
                   src={images[currentIndex].large}
@@ -128,7 +126,6 @@ const Feature = () => {
                   className='large-image'
                 />
               </div>
-              {/* Tercera columna: Imagen pequeña derecha */}
               <div className='small-image-container'>
                 <img
                   src={images[(currentIndex + 1) % images.length].small}
@@ -142,7 +139,6 @@ const Feature = () => {
             </button>
           </div>
 
-          {/* Modal para imagen grande */}
           {isModalOpen && (
             <div className='modal'>
               <span className='close-modal' onClick={toggleModal}>
@@ -157,11 +153,11 @@ const Feature = () => {
           )}
         </div>
       </div>
-      {/* Sección de estadísticas */}
+
       <div id='stats' className='text-center'>
         <div className='container'>
           <div className='section-title'>
-            <h2>DATOS</h2>
+            <h2 className='section-title'>DATOS</h2>
             <hr />
           </div>
           <div className='row'>
@@ -177,7 +173,7 @@ const Feature = () => {
             <div className='col-md-3'>
               <i className='fa fa-smile-o'></i>
               <h3>
-                <span className='count' data-count='2'>
+                <span className='count' data-count='3'>
                   0
                 </span>
               </h3>
@@ -199,7 +195,7 @@ const Feature = () => {
                   0
                 </span>
               </h3>
-              <p>DEPARTAMENTOS DONDE OPERAMOS</p>
+              <p>COBERTURA NACIONAL EN DEPARTAMENTOS</p>
             </div>
           </div>
         </div>

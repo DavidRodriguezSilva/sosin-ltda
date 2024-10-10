@@ -1,9 +1,9 @@
 #services {
 	padding: 100px 0;
-	background:  #722F37;
+	background: linear-gradient(180deg, #722F37 0%, #000000 100%);
 	color: #EAEAEA;
-  }
-  
+}
+
   #services .section-title h2 {
 	color: #D8B668;
   }
