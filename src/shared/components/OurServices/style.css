@@ -147,16 +147,25 @@
   cursor: pointer;
 }
 
-
-/* Stats */
+/* Estadísticas */
 #stats {
   padding: 3rem;
-  background-color: #f9f9f9;
+  background:  #D4AF37; /* Degradado negro a dorado */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#stats .row {
-  display: flex;
-  justify-content: space-between;
+#stats .container {
+  background-color: #722F37; /* Fondo claro para simular tarjeta */
+  padding: 3rem;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para el efecto de tarjeta */
+}
+
+#stats .section-title {
+  margin-bottom: 3rem; /* Más espacio entre el título y las cifras */
 }
 
 #stats i {
@@ -173,7 +182,6 @@
   font-size: 1rem;
 }
 
-  
   
 /* Estilos del modal */
 .modal {

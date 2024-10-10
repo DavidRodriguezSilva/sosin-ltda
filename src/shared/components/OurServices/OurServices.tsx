@@ -19,26 +19,50 @@ const Feature = () => {
   useEffect(() => {
     // Lógica para los contadores
     const counters = document.querySelectorAll('.count');
-    const speed = 100; 
+    const speed = 10000; // Mayor número para que el contador sea más lento
 
-    counters.forEach((counter) => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-count')!;
-        const count = +counter.textContent!;
+    const updateCount = (counter: Element) => {
+      const target = +counter.getAttribute('data-count')!;
+      const count = +counter.textContent!;
 
-        const increment = target / speed;
+      const increment = target / speed;
 
-        if (count < target) {
-          counter.textContent = Math.ceil(count + increment).toString();
-          setTimeout(updateCount, 1);
-        } else {
-          counter.textContent = target.toString();
+      if (count < target) {
+        counter.textContent = Math.ceil(count + increment).toString();
+        setTimeout(() => updateCount(counter), 50); // Aumenté el tiempo para que sea más lento
+      } else {
+        counter.textContent = target.toString();
+      }
+    };
+
+    const handleIntersection = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          counters.forEach((counter) => {
+            updateCount(counter);
+          });
+          observer.disconnect(); // Detener la observación una vez que los contadores han empezado
         }
-      };
+      });
+    };
 
-      updateCount();
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5, // El 50% del contenedor debe estar visible para que se inicie
     });
-  }, []); 
+
+    const statsSection = document.getElementById('stats');
+    if (statsSection) {
+      observer.observe(statsSection);
+    }
+
+    return () => {
+      if (statsSection) {
+        observer.unobserve(statsSection); // Limpiar la observación cuando el componente se desmonte
+      }
+    };
+  }, []);
+
+
 
   const images = [
     { large: Gallery1, small: Gallery10 },
@@ -88,7 +112,7 @@ const Feature = () => {
       </div>
 
       <div className='certificaciones' id='certificaciones'>
-        <h2 className='section-title'>CERTIFICACIONES</h2>
+        <h2 className='section-title'>CERTIFICACIONES QUE NOS RESPALDAN</h2>
         <hr />
         <div className='certificaciones-grid'>
           <img src={Gallery7} alt='Certificación 1' />
@@ -157,8 +181,7 @@ const Feature = () => {
       <div id='stats' className='text-center'>
         <div className='container'>
           <div className='section-title'>
-            <h2 className='section-title'>DATOS</h2>
-            <hr />
+            <h2 className='section-title'>NUESTRO POTENCIAL EN CIFRAS</h2>
           </div>
           <div className='row'>
             <div className='col-md-3'>
@@ -200,6 +223,7 @@ const Feature = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
