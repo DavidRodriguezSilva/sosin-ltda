@@ -1,45 +1,53 @@
 #footer {
-	background: #722F37;
-	padding: 20px 0;
-	color: #D8B668;
-	font-size: 14px;
-  }
-  
-  .footer-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
-  }
-  
-  .footer-column {
-	flex: 1;
-	text-align: center;
-  }
-  .super-logo{
-	width: 200px;
-  }
-  .footer-logo{
-	width: 80px; /* Ajusta el tamaño según sea necesario */
-	height: auto;
-	margin-bottom: 10px;
-  }
-  
-  .footer-column p {
-	margin: 5px 0;
-  }
-  
-  .footer-column p strong {
-	color: #D8B668;
-  }
-  
-  #footer p {
-	color: #D8B668;
-  }
-  
-  .footer-column img {
-	margin-bottom: 10px;
-  }
-  
+  background: #722f37; /* Vinotinto oscuro como fondo */
+  padding: 20px 0; /* Espaciado interno */
+  color: #d8b668; /* Texto en dorado suave */
+  font-size: 1em; /* Tamaño de fuente */
+}
+
+.footer-content {
+  display: flex; /* Flexbox para el layout */
+  justify-content: space-between; /* Espaciado entre columnas */
+  align-items: flex-start; /* Alinear columnas en la parte superior */
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar contenido */
+  padding: 0 20px; /* Espaciado lateral */
+}
+
+.footer-column {
+  flex: 1; /* Permitir que cada columna ocupe espacio igual */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.footer-logo {
+  flex: 1; /* Columna para el logo */
+  text-align: center; /* Centrar logo */
+}
+
+.footer-logo img {
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantener proporción */
+  margin-bottom: 10px; /* Espaciado debajo del logo */
+}
+.footer-logo.super img {
+  width: 140px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantener proporción */
+  margin-bottom: 10px; /* Espaciado debajo del logo */
+  mix-blend-mode: multiply;
+}
+
+.footer-column p {
+  margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+.footer-column p strong {
+  color: #d8b668; /* Color dorado suave para textos destacados */
+}
+
+#footer p {
+  color: #d8b668; /* Color dorado suave para todos los párrafos */
+}
+
+.footer-column img {
+  margin-bottom: 10px; /* Espaciado debajo de las imágenes en columnas */
+}

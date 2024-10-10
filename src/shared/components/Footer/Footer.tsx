@@ -3,16 +3,16 @@ import SuperLogo from "../../../resources/bloque2564.png"; // Logo de la Superin
 
 const Footer = () => {
   return (
-    <div id="footer">
-      <div className="footer-content">
+    <footer id="footer">
+      <div className="footer-content container">
         {/* Columna 1: Logo de la empresa */}
-        <div className="footer-column">
+        <div className="footer-logo">
           <img src={Gallery1} alt="Logo Empresa" className="footer-logo" />
         </div>
 
         {/* Columna 2: Información de la empresa */}
         <div className="footer-column">
-          <p><strong>Razón Social:</strong> SOSIN Seguridad S.A.S</p>
+          <p><strong>SOSIN Seguridad S.A.S</strong></p>
           <p><strong>NIT:</strong> 123.456.789-0</p>
           <p><strong>Teléfono:</strong> (1) 234 5678</p>
           <p><strong>Correo:</strong> info@sosinseguridad.com</p>
@@ -27,11 +27,11 @@ const Footer = () => {
         </div>
 
         {/* Columna 4: Logo de la Superintendencia */}
-        <div className="footer-column">
-          <img src={SuperLogo} alt="Superintendencia de Vigilancia" className="super-logo" />
+        <div className="footer-logo super">
+          <img src={SuperLogo} alt="Superintendencia de Vigilancia" />
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

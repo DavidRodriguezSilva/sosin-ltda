@@ -20,7 +20,7 @@ const About = () => {
                 presencial con tecnología electrónica avanzada, adaptándonos a
                 las necesidades específicas de cada cliente.
               </p>
-              <a className='text-muted' href='about'>Leer mas ...</a>
+              <button style={{ textAlign: 'justify', fontSize: '1.6rem' }} className="custom-button btn btn-primary">Leer más</button>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import MapImage from '../../../resources/MAPA.png'; // Usa el mapa que has subido
+import MapImage from '../../../resources/MapaColombia.svg'; // Usa el mapa que has subido
 
 const CoverageSection: React.FC = () => {
   return (
@@ -14,10 +14,11 @@ const CoverageSection: React.FC = () => {
           <div className="col-md-6 text-column">
             <h2>COBERTURA NACIONAL CON SEDE PRINCIPAL EN SOGAMOSO BOYACÁ</h2>
             <div className="title-underline"></div> {/* Línea dorada debajo del título */}
-            <p>
-              Contamos con todos los recursos físicos, técnicos, tecnológicos y logísticos para operar a nivel nacional, en todas las condiciones del servicio como la superintendencia de vigilancia y seguridad privada.
+            <p style={{ textAlign: 'justify', fontSize: '1.6rem' }}>
+              Contamos con todos los recursos físicos, técnicos, tecnológicos y logísticos para operar a
+              nivel nacional, en todas las condiciones del servicio como la superintendencia de vigilancia y seguridad privada.
             </p>
-            <button className="btn btn-primary">Conoce más</button>
+            <button style={{ textAlign: 'justify', fontSize: '1.6rem' }} className="custom-button btn btn-primary">Conoce más</button>
           </div>
         </div>
       </div>

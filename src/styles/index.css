@@ -1,14 +1,7 @@
-@import url('../shared/components/header/styles.css');
+@import url('../shared/components/Header/styles.css');
 @import url('../shared/components/Footer/styles.css');
-@import url('../shared/components/About/style.css');
-@import url('../../node_modules/bootstrap/dist/css/bootstrap.css');
 @import url('../shared/components/OurServices/style.css');
-@import url('../shared/components/Testimonials/style.css');
-@import url('../shared/components/Team Section/style.css');
 @import url('../shared/components/Quotation/style.css');
-@import url('../shared/components/Gallery/style.css');
-@import url('../shared/components/Service Section/style.css');
-@import url('../shared//components/Map/style.css');
 
 html,
 body {
@@ -17,6 +10,10 @@ body {
   margin: 0;
   font-family: 'Opensans', sans-serif;
 }
+
+/* --------------------------------------------------------- */
+/* -----------------  Seccion presentacion ----------------- */
+/* --------------------------------------------------------- */
 
 /* Ajuste del contenedor principal */
 .intro {
@@ -87,4 +84,276 @@ body {
 #changing-text {
   color: #ffffff;
   transition: opacity 1s ease-in-out;
+}
+
+/* --------------------------------------------------------- */
+/* --------------------  Seccion About -------------------- */
+/* --------------------------------------------------------- */
+
+#about {
+  padding: 10rem;
+}
+
+.section-title {
+  padding-bottom: 2rem;
+}
+
+#about h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+#about h2::after {
+  position: absolute;
+  content: '';
+  background: linear-gradient(to right, #000000 0%, #722f37 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+
+#about img {
+  width: 520px;
+  margin-top: 10px;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+#about p {
+  line-height: 24px;
+  margin: 30px 0;
+}
+
+/* --------------------------------------------------------- */
+/* --------------------  Seccion Testimonials ------------- */
+/* --------------------------------------------------------- */
+
+#testimonials {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* --------------------------------------------------------- */
+/* --------------------  Seccion Services ------------- */
+/* --------------------------------------------------------- */
+
+#services {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #722f37 0%, #000000 100%);
+  color: #eaeaea;
+}
+
+#services .section-title h2 {
+  color: #d8b668;
+}
+
+#services .section-title h2::after {
+  position: absolute;
+  content: '';
+  background: rgba(234, 234, 234, 1);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+
+#services i.fa {
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  padding: 20px 0;
+  background: none;
+  color: #fff;
+  box-shadow: none;
+}
+
+#services h3 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #d8b668;
+}
+
+#services p {
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#services .col-md-4 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#services .service-desc {
+  margin: 20px 0;
+}
+
+#services .image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .service-image {
+  max-width: 100%;
+  height: auto;
+}
+/* --------------------------------------------------------- */
+/* --------------------  Seccion Team ------------- */
+/* --------------------------------------------------------- */
+
+#team {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #000000 0%, #722f37 100%);
+  color: #ffffff; /* Texto en blanco por defecto */
+}
+
+#team h2 {
+  font-size: 36px;
+  color: #d8b668; /* Títulos en blanco */
+  margin-bottom: 20px;
+}
+
+.team-member {
+  margin-bottom: 30px; /* Espaciado inferior para cada card */
+}
+
+.thumbnail {
+  background-color: #fff; /* Fondo blanco para las cards */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para las cards */
+  text-align: center; /* Centrar el texto dentro de la card */
+  padding: 20px 0 40px !important; /* Espaciado interno */
+}
+
+.team-img {
+  width: 150px !important; /* Tamaño fijo de la imagen en px */
+  height: 150px !important; /* Mantener la imagen cuadrada */
+  border-radius: 50%; /* Hacer que la imagen sea redonda */
+  object-fit: contain; /* Ajustar la imagen para que se ajuste sin distorsión */
+  object-position: center;
+}
+
+.caption h4 {
+  color: #7c0a14; /* Color vino tinto para el nombre */
+  margin: 10px 0 5px; /* Margen para el nombre */
+  font-size: 24px;
+  max-width: 800px;
+}
+
+.caption p {
+  color: #000; /* Color negro para el cargo */
+  font-size: 14px; /* Tamaño de letra menor para el cargo */
+  margin: 0; /* Eliminar márgenes por defecto */
+  font-size: 18px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------- */
+/* --------------------  Seccion Map ------------- */
+/* --------------------------------------------------------- */
+
+/* Estilos para la sección de cobertura */
+.coverage-section {
+  background-color: #d8b668; /* Color vinotinto */
+  padding: 3rem;
+  color: white;
+}
+
+.coverage-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mantiene el mapa y el texto alineados */
+}
+
+.coverage-section .row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.coverage-section .map-column,
+.coverage-section .text-column {
+  flex: 1;
+  padding: 2rem; /* Asegura que tanto el texto como la imagen estén alineados con márgenes iguales */
+}
+
+.coverage-section .map-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.coverage-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.coverage-section .title-underline {
+  width: 100px;
+  height: 5px;
+  background-color: #722f37; /* Color dorado */
+  margin-bottom: 1.5rem;
+}
+
+.coverage-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Botón */
+.custom-button.btn.btn-primary {
+  padding: 0.8rem 2rem;
+  background-color: #8a5c2e;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.custom-button.btn.btn-primary:hover {
+  background-color: #c0a355 ; /* Tono más oscuro del dorado al pasar el mouse */
 }

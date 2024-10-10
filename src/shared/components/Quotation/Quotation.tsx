@@ -72,7 +72,7 @@ const Quotation = () => {
                 required
               ></textarea>
             </div>
-            <button type='submit' className='btn btn-custom'>
+            <button type='submit' className='custom-button btn btn-primary'>
               Enviar
             </button>
           </form>
