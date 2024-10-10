@@ -7,7 +7,7 @@ import ServiceSection from '../../shared/components/ServiceSection/ServiceSectio
 import TeamSection from '../../shared/components/TeamSection/TeamSection'
 import Contact from '../../shared/components/Contact/Contact'
 import Quotation from '../../shared/components/Quotation/Quotation'
-import CoverageSection from '../../shared/components/Map/CoverageSection'
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 export const Home = () => {
   return (
@@ -19,8 +19,8 @@ export const Home = () => {
       <ServiceSection />
       <TeamSection />
       <Quotation />
-      <CoverageSection />
       <Contact />
+      <ScrollToTopButton />
       <Footer />
     </>
   )

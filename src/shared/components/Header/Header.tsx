@@ -6,7 +6,14 @@ const Header = () => {
     event.preventDefault()
     const section = document.getElementById(sectionId)
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' })
+      const offset = 50
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   }
   return (
@@ -61,6 +68,18 @@ const Header = () => {
                       Sobre Nosotros
                     </a>
                   </li>
+                  <li className='work'>
+                    <span className='rotated-title effect'>
+                      Nuestro Trabajo
+                    </span>
+                    <a
+                      className='link-item'
+                      href='#testimonials'
+                      onClick={(event) => handleScroll(event, 'work')}
+                    >
+                      Nuestro Trabajo
+                    </a>
+                  </li>
                   <li className='service'>
                     <span className='rotated-title effect'>Servicios</span>
                     <a
@@ -71,18 +90,6 @@ const Header = () => {
                       Servicios
                     </a>
                   </li>
-                  <li className='work'>
-                    <span className='rotated-title effect'>
-                      Nuestro Trabajo
-                    </span>
-                    <a
-                      className='link-item'
-                      href='#testimonials'
-                      onClick={(event) => handleScroll(event, 'testimonials')}
-                    >
-                      Nuestro Trabajo
-                    </a>
-                  </li>
                   <li className='contact'>
                     <span className='rotated-title effect'>Cotización</span>
                     <a
@@ -90,7 +97,7 @@ const Header = () => {
                       href='#contact'
                       onClick={(event) => handleScroll(event, 'contact')}
                     >
-                      Cotización
+                      Contacto
                     </a>
                   </li>
                 </ul>

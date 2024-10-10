@@ -1,11 +1,10 @@
 #contact {
-	padding: 50px 0;
+	padding: 10rem 0;
 	background-color: #EAEAEA;
 	color: #333;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
   }
   
   .contact-container {

@@ -1,3 +1,4 @@
+import CoverageSection from '../Map/CoverageSection';
 import { Bienestar } from './components/Bienestar';
 import { Certificaciones } from './components/Certificaciones';
 import { Cifras } from './components/Cifras';
@@ -7,11 +8,12 @@ const Feature = () => {
 
 
   return (
-    <div id='bienestar-organizacional' className='section'>
+    <div id='work' className='section work'>
       <div className='container'>
         <h2 className='section-title'>NUESTRO SERVICIO</h2>
         <Bienestar />
         <Certificaciones />
+        <CoverageSection />
         <Cifras />
         <ClientesCarrusel />
       </div>

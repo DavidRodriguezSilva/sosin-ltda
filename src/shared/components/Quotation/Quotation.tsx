@@ -5,7 +5,7 @@ const Quotation = () => {
     <div id='contact'>
       <div className='contact-container'>
         <div className='contact-form'>
-          <h2>¡Pongámonos en contacto!</h2>
+          <h2 className='section-title'>¡Pongámonos en contacto!</h2>
           <p>
             Registre sus datos y en unos minutos un experto comercial lo
             contactará para asesorarlo.

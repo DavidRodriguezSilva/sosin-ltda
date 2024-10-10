@@ -46,6 +46,7 @@ export const Cifras = () => {
       }
     };
   }, []);
+
   return (
     <div id='stats' className='text-center stats-section'>
       <div className='container'>
@@ -53,28 +54,28 @@ export const Cifras = () => {
           <h2>Nuestro potencial en cifras</h2>
         </div>
         <div className='row'>
-          <div className='col-md-3'>
+          <div className='col-12 col-md-3'>
             <i className='fa fa-user'></i>
             <h3>
               <span className='count' data-count='4'>0</span>
             </h3>
             <p>Cobertura en múltiples regiones</p>
           </div>
-          <div className='col-md-3'>
+          <div className='col-12 col-md-3'>
             <i className='fa fa-heart'></i>
             <h3>
               <span className='count' data-count='70'>0</span>+
             </h3>
             <p>Equipo de profesionales expertos</p>
           </div>
-          <div className='col-md-3'>
+          <div className='col-12 col-md-3'>
             <i className='fa fa-anchor'></i>
             <h3>
               <span className='count' data-count='20'>0</span>+
             </h3>
             <p>Clientes que confían en nosotros</p>
           </div>
-          <div className='col-md-3'>
+          <div className='col-12 col-md-3'>
             <i className='fa fa-user'></i>
             <h3>
               <span className='count' data-count='110'>0</span>

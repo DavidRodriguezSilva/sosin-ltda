@@ -1,3 +1,7 @@
+#work {
+  padding: 10rem 0;
+}
+
 /* Estilo general de la sección */
 .section {
   background-color: #f9f9f9;
@@ -102,9 +106,14 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+h2.section-title {
+  padding-bottom: 2rem;
+  font-size: 2em;
+  font-weight: 800;
+}
 
 .section-title > h2 {
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -160,5 +169,5 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: #722f37;
+  color: #722f37 !important;
 }

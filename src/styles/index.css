@@ -94,10 +94,6 @@ body {
   padding: 10rem;
 }
 
-.section-title {
-  padding-bottom: 2rem;
-}
-
 #about h2 {
   position: relative;
   margin-bottom: 15px;
@@ -354,6 +350,27 @@ body {
   margin-top: 1rem;
 }
 
+.contact {
+  padding: 5rem 0;
+}
+
+.contact-info {
+  text-align: center;
+  margin: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaciado entre los íconos */
+  margin-bottom: 20px;
+}
+
+.social-icons img {
+  width: 40px; /* Tamaño de los íconos */
+  height: auto;
+}
+
 .custom-button.btn.btn-primary:hover {
-  background-color: #c0a355 ; /* Tono más oscuro del dorado al pasar el mouse */
+  background-color: #c0a355; /* Tono más oscuro del dorado al pasar el mouse */
 }

@@ -29,6 +29,21 @@
   height: auto; /* Mantener proporción */
   margin-bottom: 10px; /* Espaciado debajo del logo */
 }
+
+.footer-logo.super {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 10%,
+    rgba(255, 255, 255, 0.6) 20%,
+    rgb(255, 255, 255) 40%,
+    rgb(255, 255, 255) 60%,
+    rgba(255, 255, 255, 0.6) 80%,
+    rgba(255, 255, 255, 0.2) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
 .footer-logo.super img {
   width: 140px; /* Ajusta el tamaño según sea necesario */
   height: auto; /* Mantener proporción */

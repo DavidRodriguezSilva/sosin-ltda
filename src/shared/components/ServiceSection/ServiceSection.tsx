@@ -1,4 +1,4 @@
-import Gallery1 from "../../../resources/Guarda 1.png"
+import Gallery1 from "../../../resources/Guarda 1.png";
 
 const ServiceSection = () => {
   return (
@@ -9,7 +9,8 @@ const ServiceSection = () => {
           <p></p>
         </div>
         <div className="row">
-          <div className="col-md-4">
+          {/* Columna de servicios a la izquierda */}
+          <div className="col-12 col-md-4">
             <div className="service-column">
               <div className="service-desc">
                 <i className="fa fa-wordpress"></i>
@@ -40,18 +41,23 @@ const ServiceSection = () => {
               </div>
             </div>
           </div>
-          
-          <div className="col-md-4">
+
+          {/* Columna de imagen en el centro */}
+          <div className="col-12 col-md-4">
             <div className="image-column">
               <img
                 src={Gallery1}
                 alt="Servicios"
-                className="service-image"
+                className="service-image img-fluid"
+                style={{
+                  width: '100%'
+                }}
               />
             </div>
           </div>
 
-          <div className="col-md-4">
+          {/* Columna de servicios a la derecha */}
+          <div className="col-12 col-md-4">
             <div className="service-column">
               <div className="service-desc">
                 <i className="fa fa-language"></i>
