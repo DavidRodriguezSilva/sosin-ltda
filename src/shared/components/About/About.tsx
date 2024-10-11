@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom'
 import AboutLogo from '../../../resources/about.jpg'
-
+const redirect = () => {
+  window.location.href = 'about'
+}
 const About = () => {
   return (
     <div id='about' style={{ padding: '10rem' }}>
@@ -20,7 +23,7 @@ const About = () => {
                 presencial con tecnología electrónica avanzada, adaptándonos a
                 las necesidades específicas de cada cliente.
               </p>
-              <button style={{ textAlign: 'justify', fontSize: '1.6rem' }} className="custom-button btn btn-primary">Leer más</button>
+              <Link style={{ textAlign: 'justify', fontSize: '1.6rem' }} className="custom-button btn btn-primary" to={'about'} >Leer más</Link>
             </div>
           </div>
         </div>
