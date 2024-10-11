@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 import AboutLogo from '../../../resources/about.jpg'
-const redirect = () => {
-  window.location.href = 'about'
-}
+
 const About = () => {
   return (
     <div id='about' style={{ padding: '10rem' }}>
