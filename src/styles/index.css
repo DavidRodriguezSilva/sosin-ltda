@@ -173,20 +173,12 @@ body {
   padding: 100px 0;
   background: linear-gradient(180deg, #722f37 0%, #000000 100%);
   color: #eaeaea;
+  position: relative;
 }
 
 #services .section-title {
   margin-bottom: 40px;
 }
-
-.service-column {
-  margin-bottom: 30px;
-}
-
-.service-image {
-  margin-bottom: 20px;
-}
-
 
 #services .section-title h2 {
   color: #d8b668;
@@ -201,6 +193,50 @@ body {
   bottom: 0;
   margin-left: -30px;
   left: 50%;
+}
+
+.service-column {
+  margin-bottom: 30px;
+}
+
+.service-image {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.button-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px; /* Espacio entre el contenido y el botón */
+}
+
+.service-button {
+  padding: 0.8rem 2rem;
+  background-color: #8a5c2e;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.service-button:hover {
+  background-color: #b49c4d;
+}
+
+.additional-services {
+  margin-top: 20px;
+  opacity: 0; /* Inicialmente invisible */
+  overflow: hidden; /* Para ocultar el contenido expandido */
+  transition: opacity 0.5s ease-in-out; /* Solo la opacidad aquí */
+}
+
+.additional-services.show {
+  opacity: 1; /* Visible cuando se expande */
+}
+
+.service-desc {
+  margin: 20px 0;
 }
 
 #services i.fa {
@@ -222,7 +258,7 @@ body {
 
 #services p {
   font-size: 1.2em;
-line-height: 1.5em;
+  line-height: 1.5em;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -234,51 +270,10 @@ line-height: 1.5em;
   text-align: left;
 }
 
-
-#services .service-desc {
-  margin: 20px 0;
-}
-
-#services .image-column {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-#services .service-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.button-container {
-  text-align: center;
-  width: 100%;
-  margin-top: 50px; /* Espacio entre la imagen y el botón */
-}
-
 .image-column {
   text-align: center; /* Asegura que todo en esta columna esté centrado */
 }
 
-.service-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #d8b668;
-  color: #000;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1em;
-}
-
-.service-button:hover {
-  background-color: #b49c4d;
-}
-
-.service-image {
-  margin-bottom: 20px;
-  max-width: 100%;
-  height: auto;
-}
 
 
 
