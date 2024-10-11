@@ -1,4 +1,4 @@
-import Gallery1 from "../../../resources/Guarda 1.png";
+import Gallery1 from "../../../resources/Guarda2.png";
 
 const ServiceSection = () => {
   return (
@@ -56,6 +56,7 @@ const ServiceSection = () => {
             </div>
           </div>
 
+
           {/* Columna de servicios a la derecha */}
           <div className="col-12 col-md-4">
             <div className="service-column">
@@ -88,6 +89,10 @@ const ServiceSection = () => {
               </div>
             </div>
           </div>
+          {/* Botón global, fuera de las columnas */}
+        </div>
+        <div className="button-container">
+          <button className="service-button">Ver más</button>
         </div>
       </div>
     </div>

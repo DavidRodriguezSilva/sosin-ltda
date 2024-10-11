@@ -175,6 +175,19 @@ body {
   color: #eaeaea;
 }
 
+#services .section-title {
+  margin-bottom: 40px;
+}
+
+.service-column {
+  margin-bottom: 30px;
+}
+
+.service-image {
+  margin-bottom: 20px;
+}
+
+
 #services .section-title h2 {
   color: #d8b668;
 }
@@ -208,21 +221,26 @@ body {
 }
 
 #services p {
-  font-size: 1.1em;
+  font-size: 1.2em;
+line-height: 1.5em;
   color: rgba(255, 255, 255, 0.8);
 }
 
-#services .col-md-4 {
-  text-align: center;
-  margin-bottom: 40px;
+#services .col-md-4:nth-child(1) {
+  text-align: right;
 }
+
+#services .col-md-4:nth-child(3) {
+  text-align: left;
+}
+
 
 #services .service-desc {
   margin: 20px 0;
 }
 
 #services .image-column {
-  display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -231,6 +249,39 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+.button-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px; /* Espacio entre la imagen y el botón */
+}
+
+.image-column {
+  text-align: center; /* Asegura que todo en esta columna esté centrado */
+}
+
+.service-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d8b668;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.service-button:hover {
+  background-color: #b49c4d;
+}
+
+.service-image {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 /* --------------------------------------------------------- */
 /* --------------------  Seccion Team ------------- */
 /* --------------------------------------------------------- */
