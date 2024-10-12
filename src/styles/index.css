@@ -168,7 +168,6 @@ body {
 /* --------------------------------------------------------- */
 /* --------------------  Seccion Services ------------- */
 /* --------------------------------------------------------- */
-
 #services {
   padding: 100px 0;
   background: linear-gradient(180deg, #722f37 0%, #000000 100%);
@@ -224,17 +223,6 @@ body {
   background-color: #b49c4d;
 }
 
-.additional-services {
-  margin-top: 20px;
-  opacity: 0; /* Inicialmente invisible */
-  overflow: hidden; /* Para ocultar el contenido expandido */
-  transition: opacity 0.5s ease-in-out; /* Solo la opacidad aquí */
-}
-
-.additional-services.show {
-  opacity: 1; /* Visible cuando se expande */
-}
-
 .service-desc {
   margin: 20px 0;
 }
@@ -273,8 +261,6 @@ body {
 .image-column {
   text-align: center; /* Asegura que todo en esta columna esté centrado */
 }
-
-
 
 
 /* --------------------------------------------------------- */

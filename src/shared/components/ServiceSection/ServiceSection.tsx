@@ -1,22 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Importa el hook useNavigate para la navegación
 import Gallery1 from "../../../resources/Guarda2.png";
 
 const ServiceSection = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const contentRef = useRef<HTMLDivElement | null>(null);
+  const navigate = useNavigate(); // Inicializa el hook useNavigate
 
-  const toggleSection = () => {
-    setIsExpanded(prev => !prev);
+  const navigateToServicesPage = () => {
+    navigate('/services'); // Navega a la nueva página de servicios
   };
-
-  useEffect(() => {
-    if (contentRef.current) {
-      // Ajusta el max-height para la animación de apertura/cierre
-      contentRef.current.style.maxHeight = isExpanded
-        ? `${contentRef.current.scrollHeight}px`
-        : "0px";
-    }
-  }, [isExpanded]);
 
   return (
     <div id="services" className="text-center" style={{ padding: "10rem" }}>
@@ -94,80 +85,13 @@ const ServiceSection = () => {
           </div>
         </div>
 
-        {/* Contenido adicional */}
-        <div
-          ref={contentRef}
-          className="row additional-services"
-          style={{
-            maxHeight: "0px",
-            overflow: 'hidden',
-            transition: "max-height 0.5s ease-in-out, opacity 0.5s ease-in-out",
-            opacity: isExpanded ? 1 : 0,
-          }}
-        >
-          <div className="col-12 col-md-6">
-            <div className="service-column">
-              <div className="service-desc">
-                <i className="fa fa-shield"></i>
-                <h3>Servicio Adicional 1</h3>
-                <p>Descripción del servicio adicional 1.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="service-column">
-              <div className="service-desc">
-                <i className="fa fa-rocket"></i>
-                <h3>Servicio Adicional 2</h3>
-                <p>Descripción del servicio adicional 2.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="service-column">
-              <div className="service-desc">
-                <i className="fa fa-shield"></i>
-                <h3>Servicio Adicional 3</h3>
-                <p>Descripción del servicio adicional 3.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="service-column">
-              <div className="service-desc">
-                <i className="fa fa-rocket"></i>
-                <h3>Servicio Adicional 4</h3>
-                <p>Descripción del servicio adicional 4.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="service-column">
-              <div className="service-desc">
-                <i className="fa fa-shield"></i>
-                <h3>Servicio Adicional 5</h3>
-                <p>Descripción del servicio adicional 5.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="service-column">
-              <div className="service-desc">
-                <i className="fa fa-rocket"></i>
-                <h3>Servicio Adicional 6</h3>
-                <p>Descripción del servicio adicional 6.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="button-container">
           <button
             style={{ textAlign: 'justify', fontSize: '1.6rem' }}
             className="service-button"
-            onClick={toggleSection}
+            onClick={navigateToServicesPage} // Llama a la función al hacer clic
           >
-            {isExpanded ? 'Ver menos' : 'Ver más'}
+            Ver todos los servicios
           </button>
         </div>
       </div>
