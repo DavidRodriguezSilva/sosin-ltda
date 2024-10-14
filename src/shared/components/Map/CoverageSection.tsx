@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate para la redirección
 import MapImage from '../../../resources/MapaColombia.svg'; // Usa el mapa que has subido
 
 const CoverageSection: React.FC = () => {
+  const navigate = useNavigate(); // Inicializa useNavigate
+
+  const handleNavigate = () => {
+    navigate('/cobertura'); // Cambia la ruta a la página de Cobertura
+  };
+
   return (
     <div id="coverage" className="coverage-section">
       <div className="container">
@@ -18,7 +25,13 @@ const CoverageSection: React.FC = () => {
               Contamos con todos los recursos físicos, técnicos, tecnológicos y logísticos para operar a
               nivel nacional, en todas las condiciones del servicio como la superintendencia de vigilancia y seguridad privada.
             </p>
-            <button style={{ textAlign: 'justify', fontSize: '1.6rem' }} className="custom-button btn btn-primary">Conoce más</button>
+            <button
+              style={{ textAlign: 'justify', fontSize: '1.6rem' }}
+              className="custom-button btn btn-primary"
+              onClick={handleNavigate} // Redirige al hacer clic
+            >
+              Conoce más
+            </button>
           </div>
         </div>
       </div>

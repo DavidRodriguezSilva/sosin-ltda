@@ -1,7 +1,13 @@
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate para la redirección
 import ImgBienestar from '../../../../resources/GraficaCualidades.png';
 
-
 export const Bienestar = () => {
+  const navigate = useNavigate(); // Inicializa useNavigate
+
+  const handleNavigate = () => {
+    navigate('/bienestar'); // Cambia la ruta a la página de Bienestar Organizacional
+  };
+
   return (
     <div className='bienestar-organizacional mt-2 mb-2'>
       <div className='container'>
@@ -15,7 +21,9 @@ export const Bienestar = () => {
               fomentamos un entorno laboral saludable y seguro, que promueve el
               crecimiento personal y profesional de nuestros colaboradores.
             </p>
-            <button className='custom-button btn btn-primary'>Saber más</button>
+            <button className='custom-button btn btn-primary' onClick={handleNavigate}>
+              Saber más
+            </button> {/* Redirige a la página de bienestar */}
           </div>
 
           {/* Columna para la imagen */}

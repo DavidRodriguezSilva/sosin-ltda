@@ -1,49 +1,45 @@
 import Header from "../../shared/components/Header/Header";
 import Footer from "../../shared/components/Footer/Footer";
-import AboutImage from "../../resources/logoBlanco1.png"; // Imagen relacionada con el equipo de seguridad
+import WellnessImage from "../../resources/SobreNosotros.jpg"; // Imagen relacionada con el bienestar organizacional
 
-const About = () => {
+const WellnessSection = () => {
   return (
     <>
       <Header /> {/* Encabezado común en todas las páginas */}
 
-      <section style={sectionStyle}> {/* Nueva sección para Sobre Nosotros */}
+      <section style={sectionStyle}> {/* Sección para Bienestar Organizacional */}
         <div style={containerStyle}>
           <div style={textSectionStyle}>
-            <h1 style={titleStyle}>Sobre Nosotros</h1>
+            <h1 style={titleStyle}>Bienestar Organizacional</h1>
             <p style={paragraphStyle}>
-              En <strong>SOSIN Private Security</strong>, nos especializamos en
-              ofrecer soluciones de seguridad personalizadas para empresas y personas.
-              Nuestro equipo altamente capacitado y la última tecnología en vigilancia
-              garantizan la protección y tranquilidad de nuestros clientes.
+              En <strong>SOSIN Private Security</strong>, creemos que el bienestar de nuestro equipo es esencial para el éxito de nuestras operaciones.
+              Promovemos una cultura de respeto, salud y motivación que garantiza que nuestros empleados puedan dar lo mejor de sí mismos en todo momento.
             </p>
 
-            <h2 style={subtitleStyle}>Misión</h2>
+            <h2 style={subtitleStyle}>Importancia del Bienestar</h2>
             <p style={paragraphStyle}>
-              Nuestra misión es proporcionar seguridad integral y confiable,
-              asegurando la protección de los bienes y las personas bajo nuestra custodia.
-              Utilizamos una combinación de personal profesional y sistemas de seguridad
-              avanzados para prevenir riesgos y asegurar el bienestar de nuestros clientes.
+              El bienestar organizacional no solo mejora la calidad de vida de nuestros empleados, sino que también potencia su desempeño en la protección de nuestros clientes.
+              Contamos con programas integrales que fomentan la salud física y mental, el desarrollo profesional y un entorno laboral positivo.
             </p>
 
-            <h2 style={subtitleStyle}>Visión</h2>
-            <p style={paragraphStyle}>
-              Ser reconocidos como la empresa de seguridad privada más confiable del país,
-              destacándonos por nuestro enfoque en la calidad, tecnología y adaptación
-              continua a los nuevos desafíos de la seguridad.
-            </p>
-
-            <h2 style={subtitleStyle}>Valores</h2>
+            <h2 style={subtitleStyle}>Nuestras Iniciativas</h2>
             <ul style={listStyle}>
-              <li>Compromiso con la seguridad</li>
-              <li>Ética profesional</li>
-              <li>Innovación tecnológica</li>
-              <li>Responsabilidad y confianza</li>
+              <li>Programas de salud y ejercicio físico</li>
+              <li>Talleres de gestión del estrés</li>
+              <li>Apoyo psicológico y emocional</li>
+              <li>Capacitaciones continuas para el desarrollo profesional</li>
+              <li>Ambiente laboral inclusivo y seguro</li>
             </ul>
+
+            <h2 style={subtitleStyle}>Resultados</h2>
+            <p style={paragraphStyle}>
+              Gracias a estas iniciativas, hemos visto una mejora significativa en la satisfacción laboral, lo que se traduce en una mayor efectividad operativa y en la fidelización de nuestros clientes.
+              Creemos que un equipo que se siente valorado y apoyado puede ofrecer un servicio de seguridad de primer nivel.
+            </p>
           </div>
 
           <div style={imageContainerStyle}>
-            <img src={AboutImage} alt="Nuestro equipo de seguridad" style={imageStyle} />
+            <img src={WellnessImage} alt="Programa de bienestar" style={imageStyle} />
           </div>
         </div>
       </section>
@@ -56,7 +52,7 @@ const About = () => {
 // Estilos generales
 const sectionStyle: React.CSSProperties = {
   padding: "4rem 2rem",
-  backgroundColor: "#f8f9fa", // Fondo claro para la sección
+  backgroundColor: "#f0f4f7", // Fondo claro para la sección
   marginTop: "5rem", // Evitar superposición con el Header
 };
 
@@ -113,4 +109,4 @@ const listStyle: React.CSSProperties = {
   lineHeight: "2",
 };
 
-export default About;
+export default WellnessSection;
