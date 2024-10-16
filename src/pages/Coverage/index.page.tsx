@@ -1,6 +1,6 @@
 import Header from "../../shared/components/Header/Header";
 import Footer from "../../shared/components/Footer/Footer";
-import MapImage from "../../resources/SobreNosotros.jpg";  // Asegúrate de que esta ruta sea correcta
+import MapImage from "../../resources/SobreNosotros.jpeg";  // Asegúrate de que esta ruta sea correcta
 
 const CoverageSection = () => {
   return (

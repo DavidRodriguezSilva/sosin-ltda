@@ -1,6 +1,6 @@
 import Header from "../../shared/components/Header/Header";
 import Footer from "../../shared/components/Footer/Footer";
-import WellnessImage from "../../resources/SobreNosotros.jpg"; // Imagen relacionada con el bienestar organizacional
+import WellnessImage from "../../resources/SobreNosotros.jpeg"; // Imagen relacionada con el bienestar organizacional
 
 const WellnessSection = () => {
   return (

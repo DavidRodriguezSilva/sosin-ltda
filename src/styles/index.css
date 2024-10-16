@@ -266,56 +266,56 @@ body {
 /* --------------------------------------------------------- */
 /* --------------------  Seccion Team ------------- */
 /* --------------------------------------------------------- */
-
 #team {
   padding: 100px 0;
   background: linear-gradient(180deg, #000000 0%, #722f37 100%);
-  color: #ffffff; /* Texto en blanco por defecto */
+  color: #ffffff;
 }
 
 #team h2 {
   font-size: 36px;
-  color: #d8b668; /* Títulos en blanco */
+  color: #d8b668;
   margin-bottom: 20px;
 }
 
 .team-member {
-  margin-bottom: 30px; /* Espaciado inferior para cada card */
+  margin-bottom: 30px;
 }
 
 .thumbnail {
-  background-color: #fff; /* Fondo blanco para las cards */
-  border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para las cards */
-  text-align: center; /* Centrar el texto dentro de la card */
-  padding: 20px 0 40px !important; /* Espaciado interno */
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px 0 40px !important;
 }
 
 .team-img {
-  width: 150px !important; /* Tamaño fijo de la imagen en px */
-  height: 150px !important; /* Mantener la imagen cuadrada */
-  border-radius: 50%; /* Hacer que la imagen sea redonda */
-  object-fit: contain; /* Ajustar la imagen para que se ajuste sin distorsión */
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  object-fit: contain;
   object-position: center;
+
+  /* Agrega el relieve al borde */
+  border: 6px solid #D8B668; /* Borde blanco alrededor */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), /* Sombra para dar relieve */
+              inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interna para mayor profundidad */
 }
 
 .caption h4 {
-  color: #7c0a14; /* Color vino tinto para el nombre */
-  margin: 10px 0 5px; /* Margen para el nombre */
+  color: #7c0a14;
+  margin: 10px 0 5px;
   font-size: 24px;
-  max-width: 800px;
 }
 
 .caption p {
-  color: #000; /* Color negro para el cargo */
-  font-size: 14px; /* Tamaño de letra menor para el cargo */
-  margin: 0; /* Eliminar márgenes por defecto */
+  color: #000;
   font-size: 18px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
   line-height: 1.6;
 }
+
 
 /* --------------------------------------------------------- */
 /* --------------------  Seccion Map ------------- */

@@ -1,7 +1,7 @@
 import Gallery1 from '../../../resources/foto1.jpeg';
-import Gallery2 from '../../../resources/foto2.jpeg';
-import Gallery3 from '../../../resources/foto3.jpg';
-import Gallery4 from '../../../resources/foto4.jpg';
+import Gallery2 from '../../../resources/foto2.png';
+import Gallery3 from '../../../resources/foto3.png';
+import Gallery4 from '../../../resources/foto4.jpeg';
 
 const TeamSection = () => {
   return (
@@ -18,7 +18,7 @@ const TeamSection = () => {
         {/* Fila para las fotos del equipo */}
         <div className='row'>
           {[
-            { src: Gallery1, name: 'Maelene Silva', position: 'Gerente' },
+            { src: Gallery1, name: 'Marlene Silva', position: 'Gerente' },
             { src: Gallery2, name: 'Cristian Arrollo', position: 'Director de Operaciones' },
             { src: Gallery3, name: 'Shearly Joya', position: 'Recursos Humanos' },
             { src: Gallery4, name: 'Stiven Riveros', position: 'Técnico' },

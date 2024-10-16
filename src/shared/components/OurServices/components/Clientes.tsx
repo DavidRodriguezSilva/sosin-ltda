@@ -2,11 +2,11 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Gallery1 from '../../../../resources/img/portfolio/01-large.jpg'
-import Gallery2 from '.././../../../resources/img/portfolio/02-large.jpg'
-import Gallery3 from '.././../../../resources/img/portfolio/03-large.jpg'
-import Gallery4 from '.././../../../resources/img/portfolio/04-large.jpg'
-import Gallery5 from '.././../../../resources/img/portfolio/05-large.jpg'
+import Gallery1 from '../../../../resources/LOGOGSR.jpg'
+import Gallery2 from '.././../../../resources/LOGODIAMANTE.jpeg'
+import Gallery3 from '.././../../../resources/Asset-3.webp'
+import Gallery4 from '.././../../../resources/LOGO4.jpeg'
+import Gallery5 from '.././../../../resources/LOGO5.png'
 
 const ClientesCarrusel = () => {
   const settings = {

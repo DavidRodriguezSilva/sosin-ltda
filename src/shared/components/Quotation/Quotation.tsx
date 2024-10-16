@@ -1,4 +1,4 @@
-import ContacImage from '../../../resources/logoBlanco1.png'
+import ContacImage from '../../../resources/IMG_9081 (1).png'
 
 const Quotation = () => {
   return (
