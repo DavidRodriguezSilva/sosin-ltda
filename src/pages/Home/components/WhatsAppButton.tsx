@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import WhatsAppIcon from '../../../resources/WhatsApp.png'; // Asegúrate de tener un ícono de WhatsApp en esta ruta
+import WhatsAppIcon from '../../../resources/whatsApp.png'; // Asegúrate de tener un ícono de WhatsApp en esta ruta
 
 const WhatsAppButton = () => {
   const [showMessage, setShowMessage] = useState(false);  // Sólo deja el estado necesario

@@ -19,8 +19,8 @@ const TeamSection = () => {
         <div className='row'>
           {[
             { src: Gallery1, name: 'Marlene Silva', position: 'Gerente' },
-            { src: Gallery2, name: 'Cristian Arrollo', position: 'Director de Operaciones' },
-            { src: Gallery3, name: 'Shearly Joya', position: 'Recursos Humanos' },
+            { src: Gallery2, name: 'Cristian Morantes', position: 'Director de Operaciones' },
+            { src: Gallery3, name: 'Shirley Joya', position: 'Recursos Humanos' },
             { src: Gallery4, name: 'Stiven Riveros', position: 'Técnico' },
           ].map((member, index) => (
             <div key={index} className='col-md-3 col-sm-6 team-member'>

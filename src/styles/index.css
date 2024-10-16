@@ -298,7 +298,8 @@ body {
   object-position: center;
 
   /* Agrega el relieve al borde */
-  border: 6px solid #D8B668; /* Borde blanco alrededor */
+  border: 6px solid #D8B668; 
+
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), /* Sombra para dar relieve */
               inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interna para mayor profundidad */
 }
