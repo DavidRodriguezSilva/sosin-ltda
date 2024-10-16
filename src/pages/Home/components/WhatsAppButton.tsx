@@ -14,7 +14,7 @@ const WhatsAppButton = () => {
   }, []);
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/1234567890', '_blank'); // Reemplaza '1234567890' con el número de WhatsApp de la empresa
+    window.open('https://wa.me/3132658385', '_blank'); // Reemplaza '1234567890' con el número de WhatsApp de la empresa
   };
 
   return (

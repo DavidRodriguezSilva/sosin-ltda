@@ -278,6 +278,18 @@ body {
   margin-bottom: 20px;
 }
 
+.team-container {
+  transition: height 0.5s ease;
+}
+
+.row.overflow-hidden {
+  overflow: hidden;
+}
+
+.transition-height {
+  transition: height 0.5s ease-in-out;
+}
+
 .team-member {
   margin-bottom: 30px;
 }
@@ -296,12 +308,8 @@ body {
   border-radius: 50%;
   object-fit: contain;
   object-position: center;
-
-  /* Agrega el relieve al borde */
-  border: 6px solid #D8B668; 
-
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), /* Sombra para dar relieve */
-              inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interna para mayor profundidad */
+  border: 6px solid #D8B668;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .caption h4 {
@@ -315,6 +323,23 @@ body {
   font-size: 18px;
   margin: 0;
   line-height: 1.6;
+}
+
+.btn-toggle {
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d8b668;
+  color: #722F37;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-toggle:hover {
+  background-color: #722F37;
+  color: #d8b668;
 }
 
 
