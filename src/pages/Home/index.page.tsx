@@ -8,6 +8,7 @@ import TeamSection from '../../shared/components/TeamSection/TeamSection'
 import Contact from '../../shared/components/Contact/Contact'
 import Quotation from '../../shared/components/Quotation/Quotation'
 import ScrollToTopButton from './components/ScrollToTopButton'
+import WhatsAppButton from './components/WhatsAppButton'
 
 export const Home = () => {
   return (
@@ -21,6 +22,7 @@ export const Home = () => {
       <Quotation />
       <Contact />
       <ScrollToTopButton />
+      <WhatsAppButton />
       <Footer />
     </>
   )
