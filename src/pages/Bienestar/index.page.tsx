@@ -1,6 +1,7 @@
 import Header from "../../shared/components/Header/Header";
 import Footer from "../../shared/components/Footer/Footer";
 import WellnessImage from "../../resources/SobreNosotros.jpeg"; // Imagen relacionada con el bienestar organizacional
+import WhatsAppButton from "../Home/components/WhatsAppButton";
 
 const WellnessSection = () => {
   return (
@@ -44,6 +45,7 @@ const WellnessSection = () => {
         </div>
       </section>
 
+      <WhatsAppButton />
       <Footer /> {/* Pie de página común en todas las páginas */}
     </>
   );

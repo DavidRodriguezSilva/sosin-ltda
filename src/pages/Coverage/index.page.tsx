@@ -1,6 +1,7 @@
 import Header from "../../shared/components/Header/Header";
 import Footer from "../../shared/components/Footer/Footer";
 import MapImage from "../../resources/SobreNosotros.jpeg";  // Asegúrate de que esta ruta sea correcta
+import WhatsAppButton from "../Home/components/WhatsAppButton";
 
 const CoverageSection = () => {
   return (
@@ -40,6 +41,7 @@ const CoverageSection = () => {
         </div>
       </section>
 
+      <WhatsAppButton />
       <Footer /> {/* Pie de página común en todas las páginas */}
     </>
   );

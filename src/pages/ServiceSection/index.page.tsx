@@ -6,6 +6,7 @@ import Image3 from "../../resources/Guarda1.png";
 import Image4 from "../../resources/Guarda1.png";
 import Image5 from "../../resources/Guarda1.png";
 import Image6 from "../../resources/Guarda1.png";
+import WhatsAppButton from "../Home/components/WhatsAppButton";
 
 const ServiceSection = () => {
   return (
@@ -53,6 +54,7 @@ const ServiceSection = () => {
         </div>
       </section>
 
+      <WhatsAppButton />
       <Footer /> {/* Pie de página común en todas las páginas */}
     </>
   );

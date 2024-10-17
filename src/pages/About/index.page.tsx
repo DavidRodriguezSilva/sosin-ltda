@@ -1,6 +1,7 @@
 import Header from "../../shared/components/Header/Header";
 import Footer from "../../shared/components/Footer/Footer";
 import AboutImage from "../../resources/logoBlanco1.png"; // Imagen relacionada con el equipo de seguridad
+import WhatsAppButton from "../Home/components/WhatsAppButton";
 
 const About = () => {
   return (
@@ -48,6 +49,7 @@ const About = () => {
         </div>
       </section>
 
+      <WhatsAppButton />
       <Footer /> {/* Pie de página común en todas las páginas */}
     </>
   );

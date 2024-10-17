@@ -14,7 +14,7 @@ const WhatsAppButton = () => {
   }, [])
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/573132658385', '_blank')
+    window.open('https://wa.me/573132657375', '_blank')
   }
 
   return (
