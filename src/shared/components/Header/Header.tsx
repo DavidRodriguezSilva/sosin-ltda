@@ -1,18 +1,32 @@
+import { useLocation, useNavigate } from "react-router-dom";
+
 const Header = () => {
+  const location = useLocation()
+  const navigate = useNavigate()
   const handleScroll = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     sectionId: string
   ) => {
-    event.preventDefault()
-    const section = document.getElementById(sectionId)
-    if (section) {
-      const offset = 50
-      const elementPosition = section.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+    event.preventDefault();
 
+    // Si la ruta actual es "/", hacemos scroll; si no, redirigimos
+    if (location.pathname === '/') {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        const offset = 50;
+        const elementPosition = section.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
+    } else {
+      navigate(`/${sectionId}`);
       window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
+        top: 0,
+        behavior: 'smooth',
       });
     }
   }
