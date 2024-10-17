@@ -1,21 +1,21 @@
 import { useState, useEffect } from "react";
-import WhatsAppIcon from '../../../resources/whatsApp.png'; // Asegúrate de tener un ícono de WhatsApp en esta ruta
+import WhatsAppIcon from '../../../resources/WhatsApp.webp'
 
 const WhatsAppButton = () => {
-  const [showMessage, setShowMessage] = useState(false);  // Sólo deja el estado necesario
+  const [showMessage, setShowMessage] = useState(false)
 
   // Alternar la visibilidad del mensaje cada 10 segundos
   useEffect(() => {
     const interval = setInterval(() => {
-      setShowMessage(prev => !prev);  // Cambia el estado cada 10 segundos
-    }, 10000);
+      setShowMessage(prev => !prev)
+    }, 10000)
 
-    return () => clearInterval(interval);  // Limpia el intervalo cuando el componente se desmonta
-  }, []);
+    return () => clearInterval(interval)
+  }, [])
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/3132658385', '_blank'); // Reemplaza '1234567890' con el número de WhatsApp de la empresa
-  };
+    window.open('https://wa.me/573132658385', '_blank')
+  }
 
   return (
     <div>
