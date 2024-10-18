@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import RowUp from '../../../resources/up-row.svg'
+import RowUp from '../../resources/up-row.svg'
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);

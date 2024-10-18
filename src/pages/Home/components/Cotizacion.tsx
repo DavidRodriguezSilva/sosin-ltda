@@ -1,9 +1,9 @@
-import ContacImage from '../../../resources/IMG_9081 (1).png'
+import ContacImage from '../../../resources/imagenCotizacion.png'
 
-const Quotation = () => {
+export const Cotizacion = () => {
   return (
     <div id='contact'>
-      <div className='contact-container'>
+      <div className='container contact-container'>
         <div className='contact-form'>
           <h2 className='section-title'>¡Pongámonos en contacto!</h2>
           <p>
@@ -84,5 +84,3 @@ const Quotation = () => {
     </div>
   )
 }
-
-export default Quotation

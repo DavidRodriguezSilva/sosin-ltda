@@ -1,18 +1,18 @@
-import Header from "../../shared/components/Header/Header";
-import Footer from "../../shared/components/Footer/Footer";
 import Image1 from "../../resources/Guarda1.png";
 import Image2 from "../../resources/Guarda1.png";
 import Image3 from "../../resources/Guarda1.png";
 import Image4 from "../../resources/Guarda1.png";
 import Image5 from "../../resources/Guarda1.png";
 import Image6 from "../../resources/Guarda1.png";
-import WhatsAppButton from "../Home/components/WhatsAppButton";
+import { useEffect } from "react";
+import { LayoutPage } from "../../shared/Layout/Content/LayoutPage";
 
 const ServiceSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
   return (
-    <>
-      <Header /> {/* Encabezado común en todas las páginas */}
-
+    <LayoutPage>
       <section style={sectionStyle}> {/* Nueva sección para los servicios */}
         <div style={{ padding: "2rem" }}>
           <h1>Nuestros Servicios</h1>
@@ -53,10 +53,7 @@ const ServiceSection = () => {
           </div>
         </div>
       </section>
-
-      <WhatsAppButton />
-      <Footer /> {/* Pie de página común en todas las páginas */}
-    </>
+    </LayoutPage>
   );
 };
 

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
-import CamarasGif from '../../../resources/Camaras de vigilancia.gif' // Importamos el GIF correctamente
+import { useEffect } from "react"
+import ImgPresentacion from '../../../resources/img_1.webp'
 
-const Presentation: React.FC = () => {
+export const Presentacion = () => {
   useEffect(() => {
     const words = [
       'SOSIN',
@@ -20,11 +20,9 @@ const Presentation: React.FC = () => {
       'SEGURIDAD TOTAL',
       'REACTIVIDAD',
     ]
-
     let index = 0
-
     const changeText = () => {
-      const textElement = document.getElementById('changing-text')
+      const textElement = document.getElementById('dynamic-presentation-text')
       if (textElement) {
         textElement.style.opacity = '0'
         setTimeout(() => {
@@ -34,31 +32,28 @@ const Presentation: React.FC = () => {
         }, 800)
       }
     }
-
     const intervalId = setInterval(changeText, 2500)
     return () => clearInterval(intervalId)
   }, [])
 
   return (
-    <header id='header' className='header-container'>
-      <div className='intro'>
-        <div className='text-on-gif'>
+    <div id='presentacion' className='presentation-container'>
+      <div className='presentation-content'>
+        <div className='presentation-media '>
           <img
-            src={CamarasGif}
+            src={ImgPresentacion}
             alt='Cámaras de vigilancia'
             className='video-section'
           />
-          <div className='text-section'>
-            <h1>
+          <div>
+            <h1 className='presentation-text'>
               <span className='static-text'>SOMOS</span>
               <br />
-              <span id='changing-text' className='changing-text'></span>
+              <span id='dynamic-presentation-text'></span>
             </h1>
           </div>
         </div>
       </div>
-    </header>
+    </div>
   )
 }
-
-export default Presentation

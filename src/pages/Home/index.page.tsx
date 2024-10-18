@@ -1,29 +1,22 @@
-import Header from '../../shared/components/Header/Header'
-import Presentation from './components/Presentation'
-import Footer from '../../shared/components/Footer/Footer'
+import { Presentacion } from './components/Presentacion'
+import { LayoutPage } from '../../shared/Layout/Content/LayoutPage'
+import { NuestroEquipo } from './components/NuestroEquipo'
+import { Servicios } from './components/Servicios'
+import { Contacto } from './components/Contacto'
+import { Cotizacion } from './components/Cotizacion'
+import { SobreNosotros } from './components/SobreNosotros'
 import Feature from '../../shared/components/OurServices/OurServices'
-import About from '../../shared/components/About/About'
-import ServiceSection from '../../shared/components/ServiceSection/ServiceSection'
-import TeamSection from '../../shared/components/TeamSection/TeamSection'
-import Contact from '../../shared/components/Contact/Contact'
-import Quotation from '../../shared/components/Quotation/Quotation'
-import ScrollToTopButton from './components/ScrollToTopButton'
-import WhatsAppButton from './components/WhatsAppButton'
 
 export const Home = () => {
   return (
-    <>
-      <Header />
-      <Presentation />
-      <About />
+    <LayoutPage>
+      <Presentacion />
+      <SobreNosotros />
       <Feature />
-      <ServiceSection />
-      <TeamSection />
-      <Quotation />
-      <Contact />
-      <ScrollToTopButton />
-      <WhatsAppButton />
-      <Footer />
-    </>
+      <Servicios />
+      <NuestroEquipo />
+      <Cotizacion />
+      <Contacto />
+    </LayoutPage>
   )
 }

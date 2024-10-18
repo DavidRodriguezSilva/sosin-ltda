@@ -1,13 +1,9 @@
-import Header from "../../shared/components/Header/Header";
-import Footer from "../../shared/components/Footer/Footer";
 import AboutImage from "../../resources/logoBlanco1.png"; // Imagen relacionada con el equipo de seguridad
-import WhatsAppButton from "../Home/components/WhatsAppButton";
+import { LayoutPage } from "../../shared/Layout/Content/LayoutPage";
 
 const About = () => {
   return (
-    <>
-      <Header /> {/* Encabezado común en todas las páginas */}
-
+    <LayoutPage>
       <section style={sectionStyle}> {/* Nueva sección para Sobre Nosotros */}
         <div style={containerStyle}>
           {/* Primer bloque: dos párrafos a la izquierda y una imagen a la derecha */}
@@ -103,10 +99,7 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      <WhatsAppButton />
-      <Footer /> {/* Pie de página común en todas las páginas */}
-    </>
+    </LayoutPage>
   );
 };
 

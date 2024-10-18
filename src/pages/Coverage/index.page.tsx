@@ -1,13 +1,9 @@
-import Header from "../../shared/components/Header/Header";
-import Footer from "../../shared/components/Footer/Footer";
-import MapImage from "../../resources/SobreNosotros.jpeg";  // Asegúrate de que esta ruta sea correcta
-import WhatsAppButton from "../Home/components/WhatsAppButton";
+import MapImage from "../../resources/SobreNosotros.jpeg";
+import { LayoutPage } from "../../shared/Layout/Content/LayoutPage";
 
 const CoverageSection = () => {
   return (
-    <>
-      <Header /> {/* Encabezado común en todas las páginas */}
-
+    <LayoutPage>
       <section style={sectionStyle}> {/* Sección para Cobertura Nacional */}
         <div style={containerStyle}>
           <div style={textSectionStyle}>
@@ -40,10 +36,7 @@ const CoverageSection = () => {
           </div>
         </div>
       </section>
-
-      <WhatsAppButton />
-      <Footer /> {/* Pie de página común en todas las páginas */}
-    </>
+    </LayoutPage>
   );
 };
 

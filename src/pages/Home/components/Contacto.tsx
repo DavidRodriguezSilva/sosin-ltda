@@ -3,22 +3,34 @@ import LogoFb from './../../../resources/logo-fb.svg'
 import LogoX from './../../../resources/logo-x.svg'
 import LogoLink from './../../../resources/logo-linkeid.svg'
 
-const Contact = () => {
+export const Contacto = () => {
   return (
-    <div className="container contact">
-      <h2 className="section-title">Cómo nos encuentras</h2>
+    <div className="container contacto">
+      <h2 className="titulo-seccion">Cómo nos encuentras</h2>
       <div className="social-icons">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <img src={LogoFb} alt="Facebook" />
+          <div className="icon-container">
+            <img src={LogoFb} alt="Facebook" />
+            <span>@SosinLtda</span>
+          </div>
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <img src={LogoIg} alt="Instagram" />
+          <div className="icon-container">
+            <img src={LogoIg} alt="Instagram" />
+            <span>@SosinLtda</span>
+          </div>
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <img src={LogoX} alt="Twitter" />
+          <div className="icon-container">
+            <img src={LogoX} alt="Twitter" />
+            <span>@SosinLtda</span>
+          </div>
         </a>
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <img src={LogoLink} alt="LinkedIn" />
+          <div className="icon-container">
+            <img src={LogoLink} alt="LinkedIn" />
+            <span>@SosinLtda</span>
+          </div>
         </a>
       </div>
       <iframe
@@ -34,5 +46,3 @@ const Contact = () => {
     </div>
   )
 }
-
-export default Contact
