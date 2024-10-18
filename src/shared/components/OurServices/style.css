@@ -2,7 +2,7 @@
    Sección de Trabajo (#work)
    ================================ */
    #work {
-    padding: 10rem 0;
+    padding: 9rem 0;
   }
   
   /* ================================
@@ -11,45 +11,124 @@
   .section {
     background-color: #f9f9f9;
     padding: 2rem 0;
+    margin: 0 ;
   }
   
   .section hr {
     width: 100%;
     border: 1px solid #ccc;
-    margin: 2rem 0;
-  }
-  
-  /* ================================
-     Sección de Bienestar Organizacional
-     ================================ */
-  .bienestar-organizacional {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
   }
+
+/* ================================
+   Sección de ¿Quiénes Somos?
+   ================================ */
+   .quienes-somos {
+    width: 100vw; /* Ocupar todo el ancho de la ventana */
+    margin: 0; /* Eliminar cualquier margen */
+    padding: 0; /* Eliminar cualquier padding adicional */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #722F37; /* Vinotinto oscuro como fondo principal */
+}
   
-  .bienestar-organizacional .left,
-  .bienestar-organizacional .right {
-    width: 45%;
-    padding: 1rem;
-  }
-  
-  .bienestar-organizacional img {
+.content {
+    display: flex;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
+    height: 100%;
+}
   
+.text-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #722F37; /* Vinotinto oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    position: relative;
+    z-index: 1;
+}
+  
+.text-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+    color: #D8B668; /* Dorado suave */
+}
+  
+.text-content p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.custom-button.btn.btn-primary { /* Estilo del botón modificado */
+  padding: 0.8rem 2rem; /* Ajustar padding según lo que prefieras */
+  background-color: #8a5c2e; /* Color predeterminado */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 20px; /* Esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  margin-top: 2rem; /* Margen superior para separarlo del texto */
+  align-self: flex-start; /* Alinea el botón a la izquierda */
+}
+
+.custom-button.btn.btn-primary:hover { /* Estilo al pasar el mouse */
+  background-color: #c0a355; /* Tono más oscuro del dorado */
+}
+  
+.image-content {
+    flex: 1;
+    position: relative;
+}
+  
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 150px; /* Crea la curva del lado derecho */
+}
+  
+.quienes-somos:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #722F37; /* Color vinotinto */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%); /* Mantener la curva */
+    z-index: 0;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+  
+    .text-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+  
+    .image-content img {
+        border-radius: 0; /* Elimina la curva en pantallas pequeñas */
+    }
+}
+
+
   /* ================================
      Sección de Certificaciones
      ================================ */
   .certificaciones {
-    padding: 5rem 0;
+    padding: 7rem 0;
     text-align: center;
     background-color: #f9f9f9;
   }
@@ -120,8 +199,8 @@
   }
   
   h2.section-title {
-    padding-bottom: 2rem;
-    font-size: 2em;
+    padding-bottom: 6rem;
+    font-size: 3em;
     font-weight: 800;
   }
   
