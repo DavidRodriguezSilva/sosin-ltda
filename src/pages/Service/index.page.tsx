@@ -7,7 +7,7 @@ import Image6 from "../../resources/Guarda1.png";
 import { useEffect } from "react";
 import { LayoutPage } from "../../shared/Layout/Content/LayoutPage";
 
-const ServiceSection = () => {
+const Service = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, []);
@@ -92,4 +92,4 @@ const imageStyle: React.CSSProperties = {
   borderRadius: "8px 8px 0 0",
 };
 
-export default ServiceSection;
+export default Service;

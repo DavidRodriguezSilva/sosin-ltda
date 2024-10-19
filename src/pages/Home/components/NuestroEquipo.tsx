@@ -42,9 +42,9 @@ export const NuestroEquipo = () => {
     { src: Gallery2, name: 'Cristian Morantes', position: 'Director de Operaciones' },
     { src: Gallery3, name: 'Shirley Joya', position: 'Recursos Humanos' },
     { src: Gallery4, name: 'Stiven Riveros', position: 'Técnico' },
-    { src: Gallery5, name: 'Ana Torres', position: 'Diseñadora' },
-    { src: Gallery6, name: 'Luis Pérez', position: 'Desarrollador' },
-    { src: Gallery7, name: 'María Gómez', position: 'Analista' },
+    { src: Gallery5, name: 'Ana Torres', position: 'Abogado' },
+    { src: Gallery6, name: 'Luis Pérez', position: 'Contadora' },
+    { src: Gallery7, name: 'María Gómez', position: 'Contadora' },
     { src: Gallery8, name: 'Jorge Martínez', position: 'Soporte' },
   ]
 

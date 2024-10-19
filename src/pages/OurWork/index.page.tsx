@@ -1,7 +1,7 @@
 import MapImage from "../../resources/SobreNosotros.jpeg";
 import { LayoutPage } from "../../shared/Layout/Content/LayoutPage";
 
-const CoverageSection = () => {
+const OurWork = () => {
   return (
     <LayoutPage>
       <section style={sectionStyle}> {/* Sección para Cobertura Nacional */}
@@ -100,4 +100,4 @@ const listStyle: React.CSSProperties = {
   lineHeight: "2",
 };
 
-export default CoverageSection;
+export default OurWork;
