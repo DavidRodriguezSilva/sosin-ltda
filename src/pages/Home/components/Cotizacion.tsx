@@ -6,46 +6,47 @@ export const Cotizacion = () => {
       <div className='container contact-container'>
         <div className='contact-form'>
           <h2 className='section-title'>¡Pongámonos en contacto!</h2>
-          <p>
-            Registre sus datos y en unos minutos un experto comercial lo
-            contactará para asesorarlo.
-          </p>
+          <p>Registre sus datos y en unos minutos un experto comercial lo contactará para asesorarlo.</p>
           <form name='sentMessage' id='contactForm' noValidate>
+            <div className='form-row'>
             <div className='form-group'>
               <input
                 type='text'
-                id='name'
+                  id='firstName'
                 className='form-control'
-                placeholder='Nombre completo *'
+                  placeholder='Nombre *'
                 required
               />
             </div>
             <div className='form-group'>
               <input
-                type='email'
-                id='email'
+                  type='text'
+                  id='lastName'
                 className='form-control'
-                placeholder='Correo electrónico *'
+                  placeholder='Apellido *'
+                required
+              />
+            </div>
+            </div>
+            <div className='form-row'>
+            <div className='form-group'>
+              <input
+                  type='email'
+                  id='email'
+                className='form-control'
+                  placeholder='Correo electrónico *'
                 required
               />
             </div>
             <div className='form-group'>
               <input
                 type='text'
-                id='phone'
+                  id='phone'
                 className='form-control'
-                placeholder='Teléfono de contacto *'
+                  placeholder='Teléfono *'
                 required
               />
             </div>
-            <div className='form-group'>
-              <input
-                type='text'
-                id='city'
-                className='form-control'
-                placeholder='Ciudad *'
-                required
-              />
             </div>
             <div className='form-group'>
               <input
@@ -69,7 +70,6 @@ export const Cotizacion = () => {
                 className='form-control'
                 rows={4}
                 placeholder='Comentarios'
-                required
               ></textarea>
             </div>
             <button type='submit' className='custom-button btn btn-primary'>
@@ -82,5 +82,6 @@ export const Cotizacion = () => {
         </div>
       </div>
     </div>
+
   )
 }

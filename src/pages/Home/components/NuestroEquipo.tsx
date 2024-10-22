@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
 import Gallery1 from '../../../resources/foto1.jpeg'
-import Gallery2 from '../../../resources/foto2.png'
-import Gallery3 from '../../../resources/foto3.png'
-import Gallery4 from '../../../resources/foto4.jpeg'
-import Gallery5 from '../../../resources/foto1.jpeg'
-import Gallery6 from '../../../resources/foto2.png'
-import Gallery7 from '../../../resources/foto3.png'
-import Gallery8 from '../../../resources/foto4.jpeg'
+import Gallery3 from '../../../resources/foto2.png'
+import Gallery4 from '../../../resources/foto3.png'
+import Gallery6 from '../../../resources/foto4.jpeg'
+import Gallery8 from '../../../resources/foto5.png'
+import Gallery2 from '../../../resources/foto6.png'
+import Gallery7 from '../../../resources/foto7.png'
+import Gallery5 from '../../../resources/foto8.png'
 
 export const NuestroEquipo = () => {
   const [showMore, setShowMore] = useState(false)
@@ -39,13 +39,13 @@ export const NuestroEquipo = () => {
 
   const teamMembers = [
     { src: Gallery1, name: 'Marlene Silva', position: 'Gerente' },
-    { src: Gallery2, name: 'Cristian Morantes', position: 'Director de Operaciones' },
-    { src: Gallery3, name: 'Shirley Joya', position: 'Recursos Humanos' },
-    { src: Gallery4, name: 'Stiven Riveros', position: 'Técnico' },
+    { src: Gallery2, name: 'Egar Infante', position: 'Administrativo' },
+    { src: Gallery3, name: 'Cristian Morantes', position: 'Director de Operaciones ' },
+    { src: Gallery4, name: 'Shirley Joya', position: 'Recursos Humanos' },
     { src: Gallery5, name: 'Ana Torres', position: 'Abogado' },
-    { src: Gallery6, name: 'Luis Pérez', position: 'Contadora' },
+    { src: Gallery6, name: 'Stiven Riveros', position: 'Tecnico' },
     { src: Gallery7, name: 'María Gómez', position: 'Contadora' },
-    { src: Gallery8, name: 'Jorge Martínez', position: 'Soporte' },
+    { src: Gallery8, name: 'Jorge Martínez', position: 'Contadora' },
   ]
 
   return (
@@ -103,7 +103,7 @@ export const NuestroEquipo = () => {
           onClick={toggleShowMore}
           className='custom-button btn btn-primary'
         >
-          {showMore ? 'Ocultar más' : 'Mostrar más'}
+          {showMore ? 'Ocultar' : 'Mostrar más'}
         </button>
       </div>
     </div>
