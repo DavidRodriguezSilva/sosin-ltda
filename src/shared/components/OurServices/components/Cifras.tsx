@@ -7,16 +7,25 @@ export const Cifras = () => {
     const speed = 10000; // Mayor número para que el contador sea más lento
 
     const updateCount = (counter: Element) => {
-      const target = +counter.getAttribute('data-count')!;
-      const count = +counter.textContent!;
+      // Obtener el atributo data-count y el contenido de texto
+      const targetAttr = counter.getAttribute('data-count');
+      const textContent = counter.textContent;
 
-      const increment = target / speed;
+      // Comprobar si targetAttr y textContent no son nulos
+      if (targetAttr !== null && textContent !== null) {
+        const target = +targetAttr;
+        const count = +textContent;
 
-      if (count < target) {
-        counter.textContent = Math.ceil(count + increment).toString();
-        setTimeout(() => updateCount(counter), 50); // Aumenté el tiempo para que sea más lento
+        const increment = target / speed;
+
+        if (count < target) {
+          counter.textContent = Math.ceil(count + increment).toString();
+          setTimeout(() => updateCount(counter), 50); // Aumenté el tiempo para que sea más lento
+        } else {
+          counter.textContent = target.toString();
+        }
       } else {
-        counter.textContent = target.toString();
+        console.error("Error: data-count o textContent es nulo.");
       }
     };
 

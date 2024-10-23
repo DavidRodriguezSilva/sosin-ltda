@@ -12,9 +12,9 @@ const WhatsAppButton = () => {
   }, []);
 
   const openWhatsApp = () => {
-    let phone = '573132657375'
-    let message = 'Hola, estoy interesado en obtener más información sobre sus servicios de seguridad. ¿Podrían ayudarme?'
-    let encodedMessage = encodeURIComponent(message)
+    const phone = '573132657375'
+    const message = 'Hola, estoy interesado en obtener más información sobre sus servicios de seguridad. ¿Podrían ayudarme?'
+    const encodedMessage = encodeURIComponent(message)
     window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank')
   }
 

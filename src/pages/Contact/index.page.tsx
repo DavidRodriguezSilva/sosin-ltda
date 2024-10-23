@@ -5,12 +5,6 @@ import ContacImage from '../../resources/Guarda2.png'; // Imagen para la secció
 import './style.css'; // Importar el archivo CSS
 
 const Contact: React.FC = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <LayoutPage>
