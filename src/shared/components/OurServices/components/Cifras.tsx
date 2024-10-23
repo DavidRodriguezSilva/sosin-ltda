@@ -60,7 +60,7 @@ export const Cifras = () => {
     <div id='stats' className='text-center stats-section'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Nuestro potencial en cifras</h2>
+          <h3 className="subtitulo-seccion">Nuestro potencial en cifras</h3>
         </div>
         <div className='row'>
           <div className='col-12 col-md-3'>

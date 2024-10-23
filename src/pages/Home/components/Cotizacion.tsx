@@ -3,50 +3,51 @@ import ContacImage from '../../../resources/imagenCotizacion.png'
 export const Cotizacion = () => {
   return (
     <div id='contact'>
+      <h2 className='titulo-seccion' style={{ paddingBottom: "2rem" }}>CONTACTANOS</h2>
       <div className='container contact-container'>
         <div className='contact-form'>
           <h2 className='section-title'>¡Pongámonos en contacto!</h2>
           <p>Registre sus datos y en unos minutos un experto comercial lo contactará para asesorarlo.</p>
           <form name='sentMessage' id='contactForm' noValidate>
             <div className='form-row'>
-            <div className='form-group'>
-              <input
-                type='text'
+              <div className='form-group'>
+                <input
+                  type='text'
                   id='firstName'
-                className='form-control'
+                  className='form-control'
                   placeholder='Nombre *'
-                required
-              />
-            </div>
-            <div className='form-group'>
-              <input
+                  required
+                />
+              </div>
+              <div className='form-group'>
+                <input
                   type='text'
                   id='lastName'
-                className='form-control'
+                  className='form-control'
                   placeholder='Apellido *'
-                required
-              />
-            </div>
+                  required
+                />
+              </div>
             </div>
             <div className='form-row'>
-            <div className='form-group'>
-              <input
+              <div className='form-group'>
+                <input
                   type='email'
                   id='email'
-                className='form-control'
+                  className='form-control'
                   placeholder='Correo electrónico *'
-                required
-              />
-            </div>
-            <div className='form-group'>
-              <input
-                type='text'
+                  required
+                />
+              </div>
+              <div className='form-group'>
+                <input
+                  type='text'
                   id='phone'
-                className='form-control'
+                  className='form-control'
                   placeholder='Teléfono *'
-                required
-              />
-            </div>
+                  required
+                />
+              </div>
             </div>
             <div className='form-group'>
               <input

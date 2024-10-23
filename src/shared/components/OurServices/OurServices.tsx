@@ -7,7 +7,7 @@ const Feature = () => {
   return (
     <div id='our-work' className='section work'>
       <div className='container'>
-      <h2 className='section-title'>NUESTRO TRABAJO</h2>
+        <h2 className='titulo-seccion'>NUESTRO TRABAJO</h2>
         <CoverageSection />
         <Certificaciones />
         <Cifras />

@@ -12,11 +12,23 @@ body {
 
 .titulo-seccion {
   font-weight: 800;
+  text-align: center;
+  margin: 1.5rem 0;
+  letter-spacing: 0.5px;
+}
+
+.subtitulo-seccion {
+  font-weight: 600;
+  margin: 1rem 0;
+  font-size: 2rem;
 }
 
 .texto-seccion {
   font-size: 1.6rem;
   padding: 1.5rem 0;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .custom-button.btn.btn-primary {
@@ -67,7 +79,6 @@ body {
   object-position: center;
 }
 
-
 .presentation-content::before {
   content: '';
   position: absolute;
@@ -115,7 +126,7 @@ body {
 /* ---------------  Sección Sobre Nosotros ---------------- */
 /* --------------------------------------------------------- */
 #about-us {
-  margin: 7rem 0 0 0; /* Agrega un margen superior de 5rem */
+  margin: 5rem 0;
   width: 100%;
   padding: 0;
   position: relative;
@@ -123,9 +134,8 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(180deg, #722f37 0%, #000000 100%);
+  /* background: linear-gradient(180deg, #722f37 0%, #000000 100%); */
 }
-
 
 .content {
   display: flex;
@@ -136,8 +146,8 @@ body {
 .text-content {
   flex: 1;
   padding: 2rem;
-  background-color: transparent; /* Fondo transparente para respetar el degradado */
-  color: #ffffff;
+  background-color: transparent;
+  /* color: #ffffff; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,13 +189,20 @@ body {
 
 #our-work {
   padding: 5rem 0;
-  color: #eaeaea;
+  /* color: #eaeaea; */
   position: relative;
 }
 
 .coverage-section {
   color: #000;
   padding: 5rem 0;
+}
+
+.map-image {
+  min-height: 600px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* --------------------------------------------------------- */
@@ -228,8 +245,8 @@ body {
 
 #services {
   padding: 5rem 0;
-  background: linear-gradient(180deg, #722f37 0%, #000000 100%);
-  color: #eaeaea;
+  /* background: linear-gradient(180deg, #722f37 0%, #000000 100%); */
+  /* color: #eaeaea; */
   position: relative;
 }
 
@@ -276,10 +293,10 @@ body {
 /* -----------------  Seccion Nuestro Equipo ----------------- */
 /* --------------------------------------------------------- */
 #equipo-profesional {
-  margin: 0; /* Eliminar márgenes para continuidad */
+  margin: 0;
   padding: 5rem 0;
-  background: linear-gradient(180deg, #000000 0%, #722f37 100%); /* Degradado invertido */
-  color: #ffffff;
+  /* background: linear-gradient(180deg, #000000 0%, #722f37 100%); */
+  /* color: #ffffff; */
 }
 
 .contenedor-equipo {
@@ -319,12 +336,12 @@ body {
 .descripcion-miembro h4 {
   color: #7c0a14;
   margin: 10px 0 5px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .descripcion-miembro p {
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   line-height: 1.6;
 }
@@ -334,14 +351,14 @@ body {
 /* --------------------------------------------------------- */
 #contact {
   padding: 5rem 0;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .contact-container {
   display: flex;
   max-width: 1200px;
   width: 100%;
-  background-color: #D8B668;
+  background-color: #d8b668;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -349,20 +366,19 @@ body {
 }
 
 .contact-image {
-  flex: 2; /* Mantener la imagen más grande que el formulario */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #722f37;
   position: relative;
-  height: 500px; /* Aumentar la altura para hacerla más rectangular */
 }
 
 .contact-image img {
   mask-image: linear-gradient(#722f37 75%, transparent);
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Hace que la imagen cubra el contenedor */
+  height: auto;
+  object-fit: contain;
   border-radius: 0 10px 10px 0;
 }
 
@@ -411,25 +427,16 @@ body {
 }
 
 .custom-button {
-  background-color: #722f37;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
   transition: background-color 0.3s;
   width: 25%;
   box-sizing: border-box;
-  text-align: center;
-  margin-top: 20px;
 }
 
 .custom-button:hover {
   background-color: #000000;
 }
-
 
 /* --------------------------------------------------------- */
 /* -----------------  Seccion Contacto ----------------- */

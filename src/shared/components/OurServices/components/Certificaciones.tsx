@@ -6,7 +6,7 @@ import Iso18788 from '../../../../resources/iso4.png';
 export const Certificaciones = () => {
   return (
     <div className='certificaciones section-title' id='certificaciones'>
-      <h2>Certificaciones que nos respaldan</h2>
+      <h3 className='subtitulo-seccion'>Certificaciones que nos respaldan</h3>
       <div className='certificaciones-grid'>
         <div className='certificacion' data-bs-toggle='tooltip' title='Certificación ISO 14001: Sistema de Gestión Ambiental'>
           <img src={Iso14001} alt='ISO 14001' />

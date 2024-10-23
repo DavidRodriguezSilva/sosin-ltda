@@ -54,7 +54,7 @@ const ClientesCarrusel = () => {
 
   return (
     <div className="clientes-section section-title">
-      <h2>Clientes que confían en nosotros</h2>
+      <h3 className='subtitulo-seccion'>Clientes que confían en nosotros</h3>
       <Slider {...settings}>
         {clients.map(client => (
           <div key={client.id} className="client-logo">

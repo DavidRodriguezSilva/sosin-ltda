@@ -14,19 +14,17 @@ const CoverageSection: React.FC = () => {
       <div className="container">
         <div className="row">
           {/* Imagen del mapa */}
-          <div className="col-md-6 map-column">
+          <div className="col-md-6">
             <img src={MapImage} alt="Cobertura Nacional" className="map-image" />
           </div>
           {/* Texto y descripción */}
-          <div className="col-md-6 text-column">
-            <h2>COBERTURA NACIONAL CON SEDE PRINCIPAL EN SOGAMOSO BOYACÁ</h2>
-            <div className="title-underline"></div> {/* Línea dorada debajo del título */}
-            <p style={{ textAlign: 'justify', fontSize: '1.6rem' }}>
+          <div className="col-md-6 text-column map-image">
+            <h3 className='subtitulo-seccion'>Cobertura nacional con sede principal en Sogamoso, Boyacá</h3>
+            <p className='texto-seccion'>
               Contamos con todos los recursos físicos, técnicos, tecnológicos y logísticos para operar a
               nivel nacional, en todas las condiciones del servicio como la superintendencia de vigilancia y seguridad privada.
             </p>
             <button
-              style={{ textAlign: 'justify', fontSize: '1.6rem' }}
               className="custom-button btn btn-primary"
               onClick={handleNavigate} // Redirige al hacer clic
             >
