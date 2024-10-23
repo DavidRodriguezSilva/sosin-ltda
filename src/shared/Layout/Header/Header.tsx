@@ -56,13 +56,13 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className='link-item' to='#our-work' onClick={(event) => handleScroll(event, 'our-work')}>
-                    Nuestro Trabajo
+                  <Link className='link-item' to='#services' onClick={(event) => handleScroll(event, 'services')}>
+                    Servicios
                   </Link>
                 </li>
                 <li>
-                  <Link className='link-item' to='#services' onClick={(event) => handleScroll(event, 'services')}>
-                    Servicios
+                  <Link className='link-item' to='#our-work' onClick={(event) => handleScroll(event, 'our-work')}>
+                    Nuestro Trabajo
                   </Link>
                 </li>
                 <li>

@@ -1,64 +1,72 @@
-/* Estilos para la página Sobre Nosotros */
-.about-section {
+.company-info-section {
   padding: 10rem 4rem;
   background-color: #f8f9fa; /* Fondo claro para la sección */
   margin-top: 5rem; /* Evitar superposición con el Header */
 }
 
-.about-container {
+.company-info-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   gap: 2rem; /* Espacio entre el texto y la imagen */
-  flex-wrap: wrap; /* Permitir que el contenido se ajuste en pantallas pequeñas */
 }
 
-.about-text-section {
-  flex: 1;
+.company-text-section, .company-image-section {
+  flex: 1; /* Ambas columnas ocupan el mismo espacio */
 }
 
-.about-image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.about-image {
-  width: 100%; /* Imagen ocupa todo el ancho disponible */
-  max-width: 500px; /* Limitar el tamaño máximo */
+.company-image {
+  width: 100%;
+  max-width: 600px; /* Imagen más grande */
+  height: auto; /* Mantener proporción */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-title {
+/* Primer bloque: Texto a la izquierda, imagen a la derecha */
+.company-info-container:first-child {
+  flex-direction: row; /* Texto a la izquierda, imagen a la derecha */
+}
+
+/* Segundo bloque: Imagen a la izquierda, texto a la derecha */
+.company-info-container:nth-child(2) {
+  flex-direction: row; /* Invierte el orden */
+}
+
+/* Tercer bloque: Texto a la izquierda, imagen a la derecha */
+.company-info-container:nth-child(3) {
+  flex-direction: row; /* Mantiene el texto a la izquierda */
+}
+
+.company-title {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
-.about-subtitle {
+.company-subtitle {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.about-paragraph {
+.company-paragraph {
   font-size: 1.6rem;
   line-height: 1.8;
   text-align: justify;
 }
 
-.about-list {
+.company-list {
   font-size: 1.6rem;
   list-style-type: circle;
   padding-left: 1.5rem;
   line-height: 2;
 }
 
-.info-section {
+.company-details-section {
   padding: 4rem 2rem;
   background-color: #e9ecef;
   margin-top: 3rem;
@@ -66,13 +74,13 @@
   text-align: center;
 }
 
-.info-title {
+.details-title {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 2rem;
 }
 
-.info-container {
+.details-container {
   display: flex;
   justify-content: space-around;
   max-width: 1200px;
@@ -80,7 +88,7 @@
   flex-wrap: wrap;
 }
 
-.info-card {
+.details-card {
   background-color: #fff;
   border-radius: 8px;
   padding: 2rem;
@@ -89,19 +97,20 @@
   margin: 1rem;
 }
 
-.info-card-title {
+.details-card-title {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.info-card-text {
+.details-card-text {
   font-size: 1.4rem;
   line-height: 1.6;
   text-align: justify;
 }
+
 /* Estilos para el botón de contacto */
-.contact-button {
+.contact-link {
   background-color: #722F37; /* Vinotinto oscuro */
   color: white;
   padding: 1rem 2rem;
@@ -113,7 +122,6 @@
   margin-top: 1.5rem; /* Espacio superior para separar del texto */
 }
 
-.contact-button:hover {
+.contact-link:hover {
   background-color: #D8B668; /* Dorado suave al pasar el mouse */
 }
-

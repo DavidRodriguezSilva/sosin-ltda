@@ -134,6 +134,8 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: #EAEAEA;
+  color: #000000;
   /* background: linear-gradient(180deg, #722f37 0%, #000000 100%); */
 }
 
@@ -245,6 +247,8 @@ body {
 
 #services {
   padding: 5rem 0;
+  background: linear-gradient(180deg, #722F37 40%, #FFFFFF 100%);
+  color: #ffffff;
   /* background: linear-gradient(180deg, #722f37 0%, #000000 100%); */
   /* color: #eaeaea; */
   position: relative;
@@ -295,6 +299,8 @@ body {
 #equipo-profesional {
   margin: 0;
   padding: 5rem 0;
+  background-color: #722F37; 
+  color: #FFFFFF;
   /* background: linear-gradient(180deg, #000000 0%, #722f37 100%); */
   /* color: #ffffff; */
 }
@@ -351,6 +357,8 @@ body {
 /* --------------------------------------------------------- */
 #contact {
   padding: 5rem 0;
+  background: #722F37;
+  color: #ffffff;
   /* color: #ffffff; */
 }
 
@@ -442,7 +450,7 @@ body {
 /* -----------------  Seccion Contacto ----------------- */
 /* --------------------------------------------------------- */
 
-.contact {
+.contact { 
   padding: 5rem 0;
 }
 
@@ -462,7 +470,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #722f37;
+  color: #FFFFFF; /* Asegúrate de que el color sea blanco para visibilidad */
   font-weight: 600;
 }
 
