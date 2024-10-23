@@ -114,9 +114,8 @@ body {
 /* --------------------------------------------------------- */
 /* ---------------  Sección Sobre Nosotros ---------------- */
 /* --------------------------------------------------------- */
-
 #about-us {
-  margin: 5rem 0;
+  margin: 7rem 0 0 0; /* Agrega un margen superior de 5rem */
   width: 100%;
   padding: 0;
   position: relative;
@@ -124,8 +123,9 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: #722f37;
+  background: linear-gradient(180deg, #722f37 0%, #000000 100%);
 }
+
 
 .content {
   display: flex;
@@ -136,7 +136,7 @@ body {
 .text-content {
   flex: 1;
   padding: 2rem;
-  background-color: #722f37;
+  background-color: transparent; /* Fondo transparente para respetar el degradado */
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -171,31 +171,6 @@ body {
   top: 0;
   right: 0;
   border-radius: 0 0 0 150px;
-}
-
-#about-us:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  background-color: #722f37;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
-  z-index: 0;
-}
-
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-  .text-content {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .image-content img {
-    border-radius: 0;
-  }
 }
 
 /* --------------------------------------------------------- */
@@ -300,10 +275,10 @@ body {
 /* --------------------------------------------------------- */
 /* -----------------  Seccion Nuestro Equipo ----------------- */
 /* --------------------------------------------------------- */
-
 #equipo-profesional {
+  margin: 0; /* Eliminar márgenes para continuidad */
   padding: 5rem 0;
-  background: linear-gradient(180deg, #000000 0%, #722F37 100%);
+  background: linear-gradient(180deg, #000000 0%, #722f37 100%); /* Degradado invertido */
   color: #ffffff;
 }
 
@@ -374,18 +349,20 @@ body {
 }
 
 .contact-image {
-  flex: 1;
+  flex: 2; /* Mantener la imagen más grande que el formulario */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #722f37;
   position: relative;
+  height: 500px; /* Aumentar la altura para hacerla más rectangular */
 }
 
 .contact-image img {
   mask-image: linear-gradient(#722f37 75%, transparent);
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen cubra el contenedor */
   border-radius: 0 10px 10px 0;
 }
 
@@ -443,10 +420,10 @@ body {
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s;
-  width: 25%; /* Asegura que ocupe todo el ancho */
-  box-sizing: border-box; /* Evita que padding/margen modifiquen el ancho */
-  text-align: center; /* Centra el texto dentro del botón */
-  margin-top: 20px; /* Añade espacio por encima del botón */
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .custom-button:hover {

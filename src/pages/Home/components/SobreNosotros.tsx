@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import ImgBienestar from '../../../resources/SobreNosotros.jpeg';
 
 export const SobreNosotros = () => {
@@ -28,5 +28,5 @@ export const SobreNosotros = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

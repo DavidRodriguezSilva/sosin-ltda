@@ -12,9 +12,9 @@ export const Home = () => {
     <LayoutPage>
       <Presentacion />
       <SobreNosotros />
-      <Feature />
-      <Servicios />
       <NuestroEquipo />
+      <Servicios />
+      <Feature />
       <Cotizacion />
       <Contacto />
     </LayoutPage>

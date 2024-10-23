@@ -1,3 +1,10 @@
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 3rem; /* Espacio debajo del título */
+  color: #000; /* Cambia el color según lo necesario */
+}
 
 /* ================================
      Sección de Certificaciones

@@ -1,41 +1,41 @@
-import { useState, useRef, useEffect } from 'react'
-import Gallery1 from '../../../resources/foto1.jpeg'
-import Gallery3 from '../../../resources/foto2.png'
-import Gallery4 from '../../../resources/foto3.png'
-import Gallery6 from '../../../resources/foto4.jpeg'
-import Gallery8 from '../../../resources/foto5.png'
-import Gallery2 from '../../../resources/foto6.png'
-import Gallery7 from '../../../resources/foto7.png'
-import Gallery5 from '../../../resources/foto8.png'
+import { useState, useRef, useEffect } from 'react';
+import Gallery1 from '../../../resources/foto1.jpeg';
+import Gallery3 from '../../../resources/foto2.png';
+import Gallery4 from '../../../resources/foto3.png';
+import Gallery6 from '../../../resources/foto4.jpeg';
+import Gallery8 from '../../../resources/foto5.png';
+import Gallery2 from '../../../resources/foto6.png';
+import Gallery7 from '../../../resources/foto7.png';
+import Gallery5 from '../../../resources/foto8.png';
 
 export const NuestroEquipo = () => {
-  const [showMore, setShowMore] = useState(false)
-  const [height, setHeight] = useState('0px')
-  const ref = useRef<HTMLDivElement>(null)
-  const mainTeamRef = useRef<HTMLDivElement>(null)
-  const extraCardsRef = useRef<HTMLDivElement>(null)
+  const [showMore, setShowMore] = useState(false);
+  const [height, setHeight] = useState('0px');
+  const ref = useRef<HTMLDivElement>(null);
+  const mainTeamRef = useRef<HTMLDivElement>(null);
+  const extraCardsRef = useRef<HTMLDivElement>(null);
 
   const toggleShowMore = () => {
-    setShowMore(!showMore)
+    setShowMore(!showMore);
     if (ref.current) {
-      setHeight(!showMore ? `${ref.current.scrollHeight}px` : '0px')
+      setHeight(!showMore ? `${ref.current.scrollHeight}px` : '0px');
     }
     if (!showMore && extraCardsRef.current) {
       setTimeout(() => {
-        extraCardsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-      }, 300)
+        extraCardsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
     }
 
     if (showMore && mainTeamRef.current) {
-      mainTeamRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      mainTeamRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
-  }
+  };
 
   useEffect(() => {
     if (ref.current) {
-      setHeight(showMore ? `${ref.current.scrollHeight}px` : '0px')
+      setHeight(showMore ? `${ref.current.scrollHeight}px` : '0px');
     }
-  }, [showMore])
+  }, [showMore]);
 
   const teamMembers = [
     { src: Gallery1, name: 'Marlene Silva', position: 'Gerente' },
@@ -46,7 +46,7 @@ export const NuestroEquipo = () => {
     { src: Gallery6, name: 'Stiven Riveros', position: 'Tecnico' },
     { src: Gallery7, name: 'María Gómez', position: 'Contadora' },
     { src: Gallery8, name: 'Jorge Martínez', position: 'Contadora' },
-  ]
+  ];
 
   return (
     <div id='equipo-profesional' className='text-center'>
@@ -107,6 +107,5 @@ export const NuestroEquipo = () => {
         </button>
       </div>
     </div>
-  )
-}
-
+  );
+};

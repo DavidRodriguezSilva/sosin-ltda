@@ -7,8 +7,9 @@ const Feature = () => {
   return (
     <div id='our-work' className='section work'>
       <div className='container'>
-        <Certificaciones />
+      <h2 className='section-title'>NUESTRO TRABAJO</h2>
         <CoverageSection />
+        <Certificaciones />
         <Cifras />
         <ClientesCarrusel />
       </div>
@@ -18,3 +19,4 @@ const Feature = () => {
 
 
 export default Feature;
+
