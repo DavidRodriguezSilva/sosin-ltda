@@ -1,0 +1,119 @@
+/* Estilos para la página Sobre Nosotros */
+.about-section {
+  padding: 10rem 4rem;
+  background-color: #f8f9fa; /* Fondo claro para la sección */
+  margin-top: 5rem; /* Evitar superposición con el Header */
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem; /* Espacio entre el texto y la imagen */
+  flex-wrap: wrap; /* Permitir que el contenido se ajuste en pantallas pequeñas */
+}
+
+.about-text-section {
+  flex: 1;
+}
+
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 100%; /* Imagen ocupa todo el ancho disponible */
+  max-width: 500px; /* Limitar el tamaño máximo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-paragraph {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-list {
+  font-size: 1.6rem;
+  list-style-type: circle;
+  padding-left: 1.5rem;
+  line-height: 2;
+}
+
+.info-section {
+  padding: 4rem 2rem;
+  background-color: #e9ecef;
+  margin-top: 3rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.info-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 0 30%; /* Toma 30% del espacio disponible */
+  margin: 1rem;
+}
+
+.info-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.info-card-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+/* Estilos para el botón de contacto */
+.contact-button {
+  background-color: #722F37; /* Vinotinto oscuro */
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem; /* Espacio superior para separar del texto */
+}
+
+.contact-button:hover {
+  background-color: #D8B668; /* Dorado suave al pasar el mouse */
+}
+

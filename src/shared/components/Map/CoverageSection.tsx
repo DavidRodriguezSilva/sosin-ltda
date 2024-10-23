@@ -6,7 +6,7 @@ const CoverageSection: React.FC = () => {
   const navigate = useNavigate(); // Inicializa useNavigate
 
   const handleNavigate = () => {
-    navigate('/cobertura'); // Cambia la ruta a la página de Cobertura
+    navigate('/our-work'); // Cambia la ruta a la página de Cobertura
   };
 
   return (

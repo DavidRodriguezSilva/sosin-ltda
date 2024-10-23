@@ -1,0 +1,159 @@
+.contact-section {
+  padding: 8rem 2rem;
+  background-color: #f0f4f7;
+  margin-top: 5rem;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alineación superior */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem; /* Aumentar espacio entre texto e imagen */
+  flex-wrap: wrap;
+}
+
+.text-section {
+  flex: 2;
+  padding: 2rem; /* Espacio interno mayor */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 550px; /* Aumentar el tamaño máximo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 6rem 7rem 6rem 0; /* Espaciado: arriba, derecha, abajo, izquierda */
+}
+
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-paragraph {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.contact-list {
+  font-size: 1.6rem;
+  list-style-type: circle;
+  padding-left: 1.5rem;
+  line-height: 2;
+}
+
+.link-item {
+  color: #722F37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-item:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el calendario */
+.calendar {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+}
+
+.day {
+  background-color: #eaeaea; /* Fondo gris claro */
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.off-day {
+  background-color: #722F37; /* Vinotinto para domingo */
+  color: white; /* Color de texto blanco */
+}
+
+/* Nueva sección cotización */
+.cotizacion-section {
+  padding: 6rem 2rem;
+  background-color: #ffffff; /* Fondo blanco para diferenciarse de la sección anterior */
+  margin-top: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Alinear imagen a la izquierda y formulario a la derecha */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 2;
+  padding: 2rem;
+}
+
+.contact-form .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.contact-form .custom-button {
+  background-color: #722F37;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact-form .custom-button:hover {
+  background-color: #5a232b;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image1 {
+  width: 100%;
+  max-width: 550px; /* Aumentar el tamaño máximo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 13rem -6rem 13rem -5px; /* Espaciado: arriba, derecha, abajo, izquierda */
+}
